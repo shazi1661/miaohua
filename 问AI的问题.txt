@@ -1,0 +1,67 @@
+﻿════════════════════════════════════════════════════════════
+  安卓无障碍 · 微信聊天输入框读不到（最终版问题）
+  ★ 已解决（2026-10-05）★ 下面这段保留作记录，不用再问了
+════════════════════════════════════════════════════════════
+
+【结论：不是 API 不够用，是微信不把节点交给不在名单里的服务】
+
+  微信内部有一份「可信读屏」名单，只有名单里的服务（比如系统自带的
+  TalkBack）才能读取聊天输入框。第三方应用不管申请什么权限，都不在
+  名单里 —— 所以之前"偶尔能读到"其实是名单里的服务恰好开着的那些时刻。
+
+  解法：用微信时同时打开任意一个读屏服务。
+      设置 → 无障碍 → TalkBack → 打开 → 回微信正常打字 → 不用了关掉
+
+  ★ 读屏开着时手机操作方式会变：单击=选中、双击=点击、滑动=两根手指。
+  ★ 应用「设置」页有「检查微信支持」按钮，会告诉用户读屏开没开。
+
+  —— 下面是最初提的问题，保留作记录。
+     注意：里面"没有任何官方 API 能把它变出来"这个结论是【错的】。
+     当时试遍了节点相关的 API，方向就偏了 —— 真正的原因在微信那一侧。
+
+
+【环境】
+AccessibilityService，targetSdk 34，Android 13+ 真机。
+服务本身工作正常 —— QQ、浏览器、系统设置里都能读到输入框并写入文字。
+
+【现象：不是完全读不到，是"偶尔能、大部分时候不能"】
+微信（com.tencent.mm）聊天输入框：
+
+  成功的时候（少数，约占两成）：
+      AccessibilityWindowInfo 列表里有一个【额外的】com.tencent.mm 窗口
+      （类型=1），它的 getRoot() 是【可用】的 FrameLayout，
+      从它往下翻就能找到 android.widget.EditText，读、写都正常。
+      这时"窗口数量"是 4。
+
+  失败的时候（大多数）：
+      那个额外窗口不在，只剩一个"活动且聚焦"的 com.tencent.mm 窗口，
+      而它的 getRoot() 返回 null。"窗口数量"是 3。
+
+  无论成败，TYPE_VIEW_TEXT_CHANGED 事件都【收得到】，
+  但 event.getSource() 绝大多数时候返回 null。
+
+【已经全部试过、无效的】
+  1. findFocus(FOCUS_INPUT) + refresh()          → 给一个 getClassName()==null 的废节点
+  2. event.getSource() 缓存（已按包名过滤）        → 拿到的都是 FrameLayout/TextView/ProgressBar/
+                                                    ListView，子树里没有可编辑节点
+  3. getRootInActiveWindow()                      → null
+  4. 遍历所有窗口的 getRoot()（两轮：先活动/聚焦，再全部）→ 相关窗口全是 null
+  5. getRoot() 为 null 时重试 3 次 × 40ms          → 仍 null
+  6. 整个查找重试 24 次 × 250ms（共 6 秒）         → 一直失败
+  7. 事件类型扩到 6 种（TEXT_CHANGED / VIEW_FOCUSED / TEXT_SELECTION_CHANGED /
+     WINDOW_CONTENT_CHANGED / WINDOW_STATE_CHANGED / WINDOWS_CHANGED）
+  8. 用窗口变化事件触发提前重试
+  9. flagDefault|flagRetrieveInteractiveWindows|flagIncludeNotImportantViews|flagReportViewIds
+ 10. 递归往下翻子树找 isEditable()，深度 30 层
+ 11. 节点校验（排除自己包名 + 校验屏幕坐标合法）—— 已排除假阳性
+
+【约束】
+不能用输入法（IME）、不能 root、不能 Xposed/Hook/改包名签名。
+只能用官方无障碍 API。
+
+【想问的】
+在"那个额外窗口偶尔才出现、大部分时候所有微信窗口 getRoot() 都是 null"
+这种情况下，官方无障碍 API 里还有没有别的办法拿到那个输入框的节点？
+
+如果答案是没有，请直接说没有 ——
+不用给需要 root / Hook / 输入法的方案，那些已经排除了。

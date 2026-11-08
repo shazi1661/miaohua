@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.miaohua.helper"
+    android:versionCode="31"
+    android:versionName="3.6.0">
+
+    <!--
+      No INTERNET permission on purpose.
+      This app must never be able to send anything anywhere.
+    -->
+
+    <!--
+      常驻运行需要的东西。都是普通权限，没有一个是"越权"的。
+
+      注意这里【没有】REQUEST_IGNORE_BATTERY_OPTIMIZATIONS：
+      那个权限属于敏感权限，商店会重点审查，而且它会直接弹系统对话框。
+      改成让用户自己点一个按钮跳到系统的电池优化页面手动加 —— 更干净也更合规。
+    -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!--
+      手动转换模式用的悬浮窗（2026-10-16 加）。
+
+      用户主动点开的 ✧ 只在【输入框里有文字】的时候才冒出一个小圆球 ✓
+      空的时候完全不显示 ✧ 不挡屏幕 ✓
+
+      ★ 这是敏感权限 ✧ 系统会单独弹一个页面让用户同意 ✓
+      ★ 不同意也完全不影响其他功能 ✧ 只是没有悬浮球 ✓
+      ★ 仍然【没有】INTERNET 权限 ✧ 这个应用依然不可能往任何地方发东西 ✓
+    -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.DeviceDefault.Light">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".MiaohuaService"
+            android:exported="true"
+            android:label="@string/service_name"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config" />
+        </service>
+
+        <!--
+          常驻前台服务。foregroundServiceType 是 Android 14 的硬要求：
+          不声明类型的 startForeground 会直接抛异常。
+          specialUse 配一个说明性质的 subtype —— 我们的用途就是"让辅助功能一直可用"。
+        -->
+        <service
+            android:name=".KeepAliveService"
+            android:exported="false"
+            android:foregroundServiceType="specialUse">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="keeps the accessibility helper running so typing keeps being rewritten" />
+        </service>
+
+        <receiver
+            android:name=".BootReceiver"
+            android:exported="true"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+</manifest>

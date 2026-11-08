@@ -1,0 +1,12 @@
+helper processes  : 1  (pids: 21628)
+log lines before  : 12
+t=1s  foreground is target : True  (after 1 try/tries)
+t=1s  BEFORE              : [哈哈，好的。今天天气不错]
+t=2s  sending Ctrl+Shift+M
+t=3s  text now            : [才、才不是……哈哈哈喵！(￣ω￣)，好哒喵！(｀・ω・´)。今天天气不错喵！(￣^￣)，……算、算你厉害]
+t=4s  text now            : [才、才不是……哈哈哈喵！(￣ω￣)，好哒喵！(｀・ω・´)。今天天气不错喵！(￣^￣)，……算、算你厉害]
+t=5s  AFTER               : [才、才不是……哈哈哈喵！(￣ω￣)，好哒喵！(｀・ω・´)。今天天气不错喵！(￣^￣)，……算、算你厉害]
+helper log lines added    : 2
+    2026-10-02 10:19:42    tone: 开心 · 来源：模型
+    2026-10-02 10:19:42  hotkey: transformed 12 -> 52 chars  [fg start=powershell read=powershell paste=powershell->powershell]
+RESULT : PASS - transform worked end to end

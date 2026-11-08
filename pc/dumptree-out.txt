@@ -1,0 +1,282 @@
+﻿window client=1180x820
+page=-1
+MainForm bounds=682,290 1196x859 visible=True enabled=True tabstop=True screen=690,321 1180x820 text=[喵化助手 2.14.1]
+  TableLayoutPanel bounds=0,0 1180x820 visible=True enabled=True tabstop=False screen=690,321 1180x820
+    Panel bounds=3,3 162x814 visible=True enabled=True tabstop=False screen=693,324 162x814
+      Panel bounds=151,12 1x792 visible=True enabled=True tabstop=False screen=844,336 1x792
+      Label bounds=14,12 150x30 visible=True enabled=True tabstop=False screen=707,336 150x30 text=[喵化助手]
+      NavButton bounds=8,52 124x40 visible=True enabled=True tabstop=True screen=701,376 124x40 text=[试一下]
+      NavButton bounds=8,98 124x40 visible=True enabled=True tabstop=True screen=701,422 124x40 text=[喵化规则]
+      NavButton bounds=8,144 124x40 visible=True enabled=True tabstop=True screen=701,468 124x40 text=[喵化风格]
+      NavButton bounds=8,190 124x40 visible=True enabled=True tabstop=True screen=701,514 124x40 text=[颜文字库]
+      NavButton bounds=8,236 124x40 visible=True enabled=True tabstop=True screen=701,560 124x40 text=[设置]
+      NavButton bounds=8,282 124x40 visible=True enabled=True tabstop=True screen=701,606 124x40 text=[使用统计]
+      NavButton bounds=8,328 124x40 visible=True enabled=True tabstop=True screen=701,652 124x40 text=[更新公告]
+      NavButton bounds=8,374 124x40 visible=True enabled=True tabstop=True screen=701,698 124x40 text=[关于]
+      Label bounds=10,774 120x26 visible=True enabled=True tabstop=False screen=703,1098 120x26 text=[(=^･ω･^=)]
+    TableLayoutPanel bounds=171,3 704x814 visible=True enabled=True tabstop=False screen=861,324 704x814
+      HeaderBand bounds=3,3 698x120 visible=True enabled=True tabstop=False screen=864,327 698x120
+        PictureBox bounds=20,12 112x112 visible=True enabled=True tabstop=False screen=884,339 112x112
+        Label bounds=150,40 101x35 visible=True enabled=True tabstop=False screen=1014,367 101x35 text=[喵化助手]
+        Label bounds=153,78 192x22 visible=True enabled=True tabstop=False screen=1017,405 192x22 text=[打完字按一下，整段变成喵喵的]
+        CardPanel bounds=352,18 330x88 visible=True enabled=True tabstop=False screen=1216,345 330x88
+          Label bounds=6,12 64x64 visible=True enabled=True tabstop=False screen=1222,357 64x64 text=[🐾]
+          Label bounds=76,16 230x38 visible=True enabled=True tabstop=False screen=1292,361 230x38 text=[(=^･ω･^=)]
+          Label bounds=76,54 230x24 visible=True enabled=True tabstop=False screen=1292,399 230x24 text=[今天已经喵了好多次啦！]
+      Panel bounds=3,129 698x180 visible=True enabled=True tabstop=False screen=864,453 698x180
+        CardPanel bounds=16,8 666x168 visible=True enabled=True tabstop=False screen=880,461 666x168
+          PictureBox bounds=624,126 22x22 visible=True enabled=False tabstop=False screen=1504,587 22x22
+          TableLayoutPanel bounds=18,12 630x144 visible=True enabled=True tabstop=False screen=898,473 630x144
+            TableLayoutPanel bounds=3,3 624x78 visible=True enabled=True tabstop=False screen=901,476 624x78
+              StatCard bounds=0,0 148x78 visible=True enabled=True tabstop=False screen=901,476 148x78
+                Label bounds=6,8 40x34 visible=True enabled=True tabstop=False screen=907,484 40x34 text=[🟢]
+                Label bounds=48,6 92x34 visible=True enabled=True tabstop=False screen=949,482 92x34 text=[运行中]
+                Label bounds=50,42 92x18 visible=True enabled=True tabstop=False screen=951,518 92x18 text=[正常工作]
+              StatCard bounds=156,0 148x78 visible=True enabled=True tabstop=False screen=1057,476 148x78
+                Label bounds=6,8 40x34 visible=True enabled=True tabstop=False screen=1063,484 40x34 text=[🐾]
+                Label bounds=48,6 92x34 visible=True enabled=True tabstop=False screen=1105,482 92x34 text=[6]
+                Label bounds=50,42 92x18 visible=True enabled=True tabstop=False screen=1107,518 92x18 text=[条替换规则]
+              StatCard bounds=312,0 148x78 visible=True enabled=True tabstop=False screen=1213,476 148x78
+                Label bounds=6,8 40x34 visible=True enabled=True tabstop=False screen=1219,484 40x34 text=[🐱]
+                Label bounds=48,6 92x34 visible=True enabled=True tabstop=False screen=1261,482 92x34 text=[8]
+                Label bounds=50,42 92x18 visible=True enabled=True tabstop=False screen=1263,518 92x18 text=[种颜文字]
+              StatCard bounds=468,0 156x78 visible=True enabled=True tabstop=False screen=1369,476 156x78
+                Label bounds=6,8 40x34 visible=True enabled=True tabstop=False screen=1375,484 40x34 text=[✨]
+                Label bounds=48,6 100x34 visible=True enabled=True tabstop=False screen=1417,482 100x34 text=[0]
+                Label bounds=50,42 100x18 visible=True enabled=True tabstop=False screen=1419,518 100x18 text=[本次已喵化]
+            Label bounds=3,84 624x22 visible=True enabled=True tabstop=False screen=901,557 624x22 text=[立即转换 Ctrl+Shift+M      暂停/]
+            Label bounds=3,106 624x38 visible=True enabled=True tabstop=False screen=901,579 624x38
+      Panel bounds=3,315 698x352 visible=True enabled=True tabstop=False screen=864,639 698x352
+        FadeOverlay bounds=16,8 666x338 visible=True enabled=False tabstop=False screen=880,647 666x338
+        CardPanel bounds=16,8 666x338 visible=True enabled=True tabstop=False screen=880,647 666x338
+          PictureBox bounds=624,296 22x22 visible=True enabled=False tabstop=False screen=1504,943 22x22
+          TableLayoutPanel bounds=18,14 630x308 visible=True enabled=True tabstop=False screen=898,661 630x308
+            Panel bounds=3,3 624x28 visible=True enabled=True tabstop=False screen=901,664 624x28
+              Label bounds=0,5 322x23 visible=True enabled=True tabstop=False screen=901,669 322x23 text=[喵化实验室　输入你想说的话，下面立刻显示效果]
+              Label bounds=582,8 42x19 visible=True enabled=True tabstop=False screen=1483,672 42x19 text=[0 / 500]
+            FieldBox bounds=3,37 624x79 visible=True enabled=True tabstop=False screen=901,698 624x79
+              TextBox bounds=9,7 606x65 visible=True enabled=True tabstop=True screen=910,705 589x65
+            Panel bounds=3,122 624x28 visible=True enabled=True tabstop=False screen=901,783 624x28
+              Label bounds=0,6 54x20 visible=True enabled=True tabstop=False screen=901,789 54x20 text=[喵化之后]
+              Label bounds=624,8 0x19 visible=True enabled=True tabstop=False screen=1525,791 0x19
+              Label bounds=226,4 172x26 visible=True enabled=True tabstop=False screen=1127,787 172x26 text=[(=^･ω･^=)  喵化中～]
+            FieldBox bounds=3,156 624x94 visible=True enabled=True tabstop=False screen=901,817 624x94
+              TextBox bounds=9,7 606x80 visible=True enabled=True tabstop=True screen=910,824 589x80
+            FlowLayoutPanel bounds=3,256 624x49 visible=True enabled=True tabstop=False screen=901,917 624x49
+              RoundButton bounds=3,3 96x30 visible=True enabled=True tabstop=True screen=904,920 96x30 text=[复制结果]
+              RoundButton bounds=105,3 96x30 visible=True enabled=True tabstop=True screen=1006,920 96x30 text=[再喵一次]
+              RoundButton bounds=207,3 142x40 visible=True enabled=True tabstop=True screen=1108,920 142x40 text=[🐾 立即喵化]
+        CardPanel bounds=16,8 666x338 visible=False enabled=True tabstop=False screen=880,647 666x338
+          SmoothPanel bounds=22,16 634x306 visible=False enabled=True tabstop=False screen=902,663 634x306
+            Panel bounds=0,0 617x640 visible=False enabled=True tabstop=False screen=902,663 617x640
+              Label bounds=0,0 780x84 visible=False enabled=True tabstop=False screen=902,663 780x84 text=[这个软件是【完全免费】的
+如果你是花钱买的，说明你]
+              Label bounds=0,96 780x580 visible=False enabled=True tabstop=False screen=902,759 780x580 text=[喵化助手 2.14.1　（2026-10-04）
+]
+              FlowLayoutPanel bounds=0,592 780x42 visible=False enabled=True tabstop=False screen=902,1255 780x42
+                RoundButton bounds=3,3 120x32 visible=False enabled=True tabstop=True screen=905,1258 120x32 text=[打开规则文件]
+                RoundButton bounds=129,3 130x32 visible=False enabled=True tabstop=True screen=1031,1258 130x32 text=[打开所在文件夹]
+        CardPanel bounds=16,8 666x338 visible=False enabled=True tabstop=False screen=880,647 666x338
+          TableLayoutPanel bounds=18,14 630x308 visible=False enabled=True tabstop=False screen=898,661 630x308
+            Label bounds=3,0 624x50 visible=False enabled=True tabstop=False screen=901,661 624x50 text=[更新公告]
+            Panel bounds=3,53 624x34 visible=False enabled=True tabstop=False screen=901,714 624x34
+              RoundButton bounds=0,2 120x30 visible=False enabled=True tabstop=True screen=901,716 120x30 text=[用记事本打开]
+              Label bounds=142,2 1024x30 visible=False enabled=True tabstop=False screen=1043,716 1024x30 text=[更新记录.txt　（44877 字）]
+            SmoothTextView bounds=3,93 624x212 visible=False enabled=True tabstop=True screen=6,119 624x212
+              VScrollBar bounds=610,0 14x212 visible=False enabled=True tabstop=False screen=616,119 14x212
+        CardPanel bounds=16,8 666x338 visible=False enabled=True tabstop=False screen=880,647 666x338
+          TableLayoutPanel bounds=22,16 622x306 visible=False enabled=True tabstop=False screen=902,663 622x306
+            Label bounds=3,0 616x34 visible=False enabled=True tabstop=False screen=905,663 616x34 text=[使用统计]
+            Label bounds=3,34 616x88 visible=False enabled=True tabstop=False screen=905,697 616x88 text=[累计喵化　134 次
+今日喵化　47 次
+等级　]
+            LevelBar bounds=3,125 616x22 visible=False enabled=True tabstop=True screen=905,788 616x22
+            Label bounds=3,150 616x26 visible=False enabled=True tabstop=False screen=905,813 616x26 text=[升到 Lv.5 还需要 26 次喵化　·　每 40 ]
+            SmoothPanel bounds=3,179 616x124 visible=False enabled=True tabstop=False screen=905,842 616x124
+              Label bounds=0,0 200x22 visible=False enabled=True tabstop=False screen=905,842 200x22 text=[颜文字使用次数]
+              Label bounds=0,26 260x22 visible=False enabled=True tabstop=False screen=905,868 260x22 text=[(｡•́︿•̀｡)　—　0 次]
+              Label bounds=0,48 260x22 visible=False enabled=True tabstop=False screen=905,890 260x22 text=[(´；ω；`)　—　0 次]
+              Label bounds=0,70 260x22 visible=False enabled=True tabstop=False screen=905,912 260x22 text=[(ᵕ﹏ᵕ)　—　0 次]
+              Label bounds=0,92 260x22 visible=False enabled=True tabstop=False screen=905,934 260x22 text=[(｡╥﹏╥｡)　—　0 次]
+              Label bounds=0,114 260x22 visible=False enabled=True tabstop=False screen=905,956 260x22 text=[(｡•́︵•̀｡)　—　0 次]
+              Label bounds=0,136 260x22 visible=False enabled=True tabstop=False screen=905,978 260x22 text=[(っ- ‸ - ς)　—　1 次]
+              Label bounds=0,158 260x22 visible=False enabled=True tabstop=False screen=905,1000 260x22 text=[(｡>﹏<｡)　—　1 次]
+              Label bounds=0,180 260x22 visible=False enabled=True tabstop=False screen=905,1022 260x22 text=[(´。＿。｀)　—　0 次]
+        CardPanel bounds=16,8 666x338 visible=False enabled=True tabstop=False screen=880,647 666x338
+          SmoothPanel bounds=22,16 634x306 visible=False enabled=True tabstop=False screen=902,663 634x306
+            Panel bounds=0,0 617x1056 visible=False enabled=True tabstop=False screen=902,663 617x1056
+              Label bounds=0,0 162x32 visible=False enabled=True tabstop=False screen=902,663 162x32 text=[设置]
+              Label bounds=0,38 162x26 visible=False enabled=True tabstop=False screen=902,701 162x26 text=[全局快捷键]
+              Label bounds=0,64 162x22 visible=False enabled=True tabstop=False screen=902,727 162x22 text=[用 + 连接，最后一个键可以是 A-Z、0-9 或 ]
+              Label bounds=0,90 120x26 visible=False enabled=True tabstop=False screen=902,753 120x26 text=[立即转换]
+              TextBox bounds=124,91 160x24 visible=False enabled=True tabstop=True screen=1028,756 156x20 text=[Ctrl+Shift+M]
+              Label bounds=0,122 120x26 visible=False enabled=True tabstop=False screen=902,785 120x26 text=[暂停 / 恢复]
+              TextBox bounds=124,123 160x24 visible=False enabled=True tabstop=True screen=1028,788 156x20 text=[Ctrl+Alt+Shift+P]
+              Label bounds=0,154 120x26 visible=False enabled=True tabstop=False screen=902,817 120x26 text=[重载规则]
+              TextBox bounds=124,155 160x24 visible=False enabled=True tabstop=True screen=1028,820 156x20 text=[Ctrl+Alt+Shift+R]
+              Label bounds=0,194 162x26 visible=False enabled=True tabstop=False screen=902,857 162x26 text=[自动模式]
+              Label bounds=0,220 120x26 visible=False enabled=True tabstop=False screen=902,883 120x26 text=[停止打字后]
+              TextBox bounds=124,221 80x24 visible=False enabled=True tabstop=True screen=1028,886 76x20 text=[700]
+              Label bounds=216,220 401x26 visible=False enabled=True tabstop=False screen=1118,883 401x26 text=[毫秒。300 左右比较跟手，打字慢的话调到 600~]
+              Label bounds=0,252 120x26 visible=False enabled=True tabstop=False screen=902,915 120x26 text=[生效程序]
+              TextBox bounds=124,253 260x24 visible=False enabled=True tabstop=True screen=1028,918 256x20 text=[QQ, Code, Weixin]
+              Label bounds=396,252 221x26 visible=False enabled=True tabstop=False screen=1298,915 221x26 text=[进程名，不要带 .exe。多个用逗号或空格分开。]
+              RoundButton bounds=0,300 120x34 visible=False enabled=True tabstop=True screen=902,963 120x34 text=[保存设置]
+              RoundButton bounds=132,300 150x34 visible=False enabled=True tabstop=True screen=1034,963 150x34 text=[用记事本打开规则]
+              Label bounds=0,344 617x22 visible=False enabled=True tabstop=False screen=902,1007 617x22 text=[这些设置就是 rules.txt 里对应的几行，保存]
+              Label bounds=0,620 162x26 visible=False enabled=True tabstop=False screen=902,1283 162x26 text=[界面]
+              Label bounds=0,646 162x22 visible=False enabled=True tabstop=False screen=902,1309 162x22 text=[四项美化可以单独关掉，关掉哪项、下次打开程序就不显示]
+              ToggleRow bounds=0,676 380x28 visible=False enabled=True tabstop=True screen=902,1339 380x28 text=[顶部猫娘状态气泡]
+              ToggleRow bounds=0,708 380x28 visible=False enabled=True tabstop=True screen=902,1371 380x28 text=[运行状态四个数字卡]
+              ToggleRow bounds=0,740 470x28 visible=False enabled=True tabstop=True screen=902,1403 470x28 text=[实验室强化（中间猫娘、粉底结果框、大按钮）]
+              ToggleRow bounds=0,772 380x28 visible=False enabled=True tabstop=True screen=902,1435 380x28 text=[颜文字库胶囊网格]
+              ToggleRow bounds=0,802 300x28 visible=False enabled=True tabstop=True screen=902,1465 300x28 text=[导航猫系图标]
+              ToggleRow bounds=310,802 300x28 visible=False enabled=True tabstop=True screen=1212,1465 300x28 text=[升级时提示]
+              ToggleRow bounds=0,834 300x28 visible=False enabled=True tabstop=True screen=902,1497 300x28 text=[颜色分层（降低饱和度）]
+              ToggleRow bounds=310,834 300x28 visible=False enabled=True tabstop=True screen=1212,1497 300x28 text=[卡片角落淡猫爪]
+              ToggleRow bounds=0,866 300x28 visible=False enabled=True tabstop=True screen=902,1529 300x28 text=[猫娘台词随次数变化]
+              ToggleRow bounds=310,866 300x28 visible=False enabled=True tabstop=True screen=1212,1529 300x28 text=[动画与过渡]
+              Label bounds=0,898 120x26 visible=False enabled=True tabstop=False screen=902,1561 120x26 text=[动画时长]
+              TextBox bounds=124,899 80x24 visible=False enabled=True tabstop=True screen=1028,1564 76x20 text=[200]
+              Label bounds=216,898 401x26 visible=False enabled=True tabstop=False screen=1118,1561 401x26 text=[毫秒。页面淡入用多久。400 是原来写死的值，越长越]
+              Label bounds=0,930 120x26 visible=False enabled=True tabstop=False screen=902,1593 120x26 text=[滑块比例]
+              TextBox bounds=124,931 80x24 visible=False enabled=True tabstop=True screen=1028,1596 76x20 text=[100]
+              Label bounds=216,930 401x26 visible=False enabled=True tabstop=False screen=1118,1593 401x26 text=[百分比。100 = 滑块和淡化一样长（默认）；53 ]
+              RoundButton bounds=0,974 136x34 visible=False enabled=True tabstop=True screen=902,1637 136x34 text=[保存界面设置]
+              Label bounds=148,980 160x22 visible=False enabled=True tabstop=False screen=1050,1643 160x22 text=[改完点这个保存，下次打开程序生效。上面那个「保存设置]
+              Label bounds=0,378 611x26 visible=False enabled=True tabstop=False screen=902,1041 611x26 text=[智能语气（用本机大模型判断情绪）]
+              Label bounds=0,404 611x22 visible=False enabled=True tabstop=False screen=902,1067 611x22 text=[只连 127.0.0.1，也就是你自己这台电脑，不会]
+              ToggleRow bounds=0,432 320x28 visible=False enabled=True tabstop=True screen=902,1095 320x28 text=[开启智能语气]
+              Label bounds=0,470 120x26 visible=False enabled=True tabstop=False screen=902,1133 120x26 text=[模型地址]
+              TextBox bounds=124,471 240x24 visible=False enabled=True tabstop=True screen=1028,1136 236x20 text=[http://127.0.0.1:1234]
+              Label bounds=376,470 420x26 visible=False enabled=True tabstop=False screen=1278,1133 420x26 text=[LM Studio: http://127.0.0.]
+              Label bounds=0,502 120x26 visible=False enabled=True tabstop=False screen=902,1165 120x26 text=[模型名]
+              TextBox bounds=124,503 240x24 visible=False enabled=True tabstop=True screen=1028,1168 236x20 text=[qwen2.5-3b-instruct]
+              Label bounds=376,502 420x26 visible=False enabled=True tabstop=False screen=1278,1165 420x26 text=[LM Studio 里已加载的模型标识；Ollama]
+              RoundButton bounds=0,540 96x32 visible=False enabled=True tabstop=True screen=902,1203 96x32 text=[测试连接]
+              RoundButton bounds=104,540 124x32 visible=False enabled=True tabstop=True screen=1006,1203 124x32 text=[启动内置模型]
+              Label bounds=0,580 0x20 visible=False enabled=True tabstop=False screen=902,1243 0x20
+        CardPanel bounds=16,8 666x338 visible=False enabled=True tabstop=False screen=880,647 666x338
+          TableLayoutPanel bounds=22,16 634x306 visible=False enabled=True tabstop=False screen=902,663 634x306
+            Label bounds=3,0 628x32 visible=False enabled=True tabstop=False screen=905,663 628x32 text=[颜文字库]
+            Label bounds=3,32 628x24 visible=False enabled=True tabstop=False screen=905,695 628x24 text=[每次转换从这里随机挑一个。改动立即写入 rules.]
+            SmoothPanel bounds=3,59 628x194 visible=False enabled=True tabstop=False screen=905,722 628x194
+            Panel bounds=3,259 628x44 visible=False enabled=True tabstop=False screen=905,922 628x44
+              TextBox bounds=0,9 240x24 visible=False enabled=True tabstop=True screen=907,933 236x20
+              RoundButton bounds=252,8 84x30 visible=False enabled=True tabstop=True screen=1157,930 84x30 text=[添加]
+        CardPanel bounds=16,8 666x338 visible=False enabled=True tabstop=False screen=880,647 666x338
+          SmoothPanel bounds=22,16 634x306 visible=False enabled=True tabstop=False screen=902,663 634x306
+            Panel bounds=0,0 617x620 visible=False enabled=True tabstop=False screen=902,663 617x620
+              Label bounds=0,0 611x32 visible=False enabled=True tabstop=False screen=902,663 611x32 text=[喵化风格]
+              Label bounds=0,62 611x22 visible=False enabled=True tabstop=False screen=902,725 611x22 text=[① 喵化程度 —— 决定多久加一次装饰]
+              TableLayoutPanel bounds=0,88 450x50 visible=False enabled=True tabstop=False screen=902,751 450x50
+                StyleChip bounds=4,4 141x42 visible=False enabled=True tabstop=True screen=906,755 141x42 text=[轻度]
+                StyleChip bounds=153,4 141x42 visible=False enabled=True tabstop=True screen=1055,755 141x42 text=[普通]
+                StyleChip bounds=302,4 144x42 visible=False enabled=True tabstop=True screen=1204,755 144x42 text=[重度]
+              Label bounds=0,138 611x22 visible=False enabled=True tabstop=False screen=902,801 611x22 text=[轻度 = 只在整段末尾加一次　　普通 = 每个句号/]
+              Label bounds=0,168 611x26 visible=False enabled=True tabstop=False screen=902,831 611x26 text=[② 外观风格 —— 只改句尾装饰，会关掉语气]
+              TableLayoutPanel bounds=0,196 450x100 visible=False enabled=True tabstop=False screen=902,859 450x100
+                StyleChip bounds=4,4 141x42 visible=False enabled=True tabstop=True screen=906,863 141x42 text=[萌系]
+                StyleChip bounds=153,4 141x42 visible=False enabled=True tabstop=True screen=1055,863 141x42 text=[元气]
+                StyleChip bounds=302,4 144x42 visible=False enabled=True tabstop=True screen=1204,863 144x42 text=[慵懒]
+                StyleChip bounds=4,54 141x42 visible=False enabled=True tabstop=True screen=906,913 141x42 text=[撒娇]
+                StyleChip bounds=153,54 141x42 visible=False enabled=True tabstop=True screen=1055,913 141x42 text=[冷淡]
+                StyleChip bounds=302,54 144x42 visible=False enabled=True tabstop=True screen=1204,913 144x42 text=[颜文字在前]
+              Label bounds=0,300 611x26 visible=False enabled=True tabstop=False screen=902,963 611x26 text=[③ 语气改写 —— 二选一，点了会把外观风格换掉]
+              Label bounds=0,326 611x22 visible=False enabled=True tabstop=False screen=902,989 611x22 text=[两个是二选一：点外观风格就关掉语气，点语气风格就换成]
+              Label bounds=0,352 611x22 visible=False enabled=True tabstop=False screen=902,1015 611x22 text=[★ 词语替换（「规则」页里那些）和风格是两回事，选任]
+              TableLayoutPanel bounds=0,350 450x150 visible=False enabled=True tabstop=False screen=902,1013 450x150
+                StyleChip bounds=4,4 141x42 visible=False enabled=True tabstop=True screen=906,1017 141x42 text=[傲娇]
+                StyleChip bounds=153,4 141x42 visible=False enabled=True tabstop=True screen=1055,1017 141x42 text=[黏人]
+                StyleChip bounds=302,4 144x42 visible=False enabled=True tabstop=True screen=1204,1017 144x42 text=[慵懒]
+                StyleChip bounds=4,54 141x42 visible=False enabled=True tabstop=True screen=906,1067 141x42 text=[委屈]
+                StyleChip bounds=153,54 141x42 visible=False enabled=True tabstop=True screen=1055,1067 141x42 text=[元气]
+                StyleChip bounds=302,54 144x42 visible=False enabled=True tabstop=True screen=1204,1067 144x42 text=[应激]
+                StyleChip bounds=4,104 141x42 visible=False enabled=True tabstop=True screen=906,1117 141x42 text=[不加语气]
+              Label bounds=0,508 563x35 visible=False enabled=True tabstop=False screen=902,1171 563x35 text=[⚠ 语气改写会替你在句子开头和结尾加话，等于改了你「]
+              Label bounds=0,34 611x24 visible=False enabled=True tabstop=False screen=902,697 611x24 text=[当前生效：外观风格「未套用」　+　语气「已开启（自定]
+        CardPanel bounds=16,8 666x338 visible=False enabled=True tabstop=False screen=880,647 666x338
+          TableLayoutPanel bounds=18,14 630x308 visible=False enabled=True tabstop=False screen=898,661 630x308
+            Label bounds=3,0 624x50 visible=False enabled=True tabstop=False screen=901,661 624x50 text=[只读。用「用记事本打开」改，存盘后点「重新载入」。　]
+            SmoothTextView bounds=3,53 624x208 visible=False enabled=True tabstop=True screen=6,79 624x208
+              VScrollBar bounds=610,0 14x208 visible=False enabled=True tabstop=False screen=616,79 14x208
+            FlowLayoutPanel bounds=3,267 624x38 visible=False enabled=True tabstop=False screen=901,928 624x38
+              RoundButton bounds=3,3 104x34 visible=False enabled=True tabstop=True screen=904,931 104x34 text=[重新载入]
+              RoundButton bounds=113,3 170x34 visible=False enabled=True tabstop=True screen=1014,931 170x34 text=[刷新预览]
+              RoundButton bounds=289,3 130x34 visible=False enabled=True tabstop=True screen=1190,931 130x34 text=[用记事本打开]
+      Panel bounds=3,673 698x138 visible=True enabled=True tabstop=False screen=864,997 698x138
+        CardPanel bounds=16,4 666x122 visible=True enabled=True tabstop=False screen=880,1001 666x122
+          PictureBox bounds=624,80 22x22 visible=True enabled=False tabstop=False screen=1504,1081 22x22
+          TableLayoutPanel bounds=18,12 630x98 visible=True enabled=True tabstop=False screen=898,1013 630x98
+            ToggleRow bounds=0,2 332x28 visible=True enabled=True tabstop=True screen=898,1015 332x28 text=[暂停（所有转换都不生效）]
+            ToggleRow bounds=340,2 282x28 visible=True enabled=True tabstop=True screen=1238,1015 282x28 text=[停止打字后自动转换]
+            ToggleRow bounds=0,34 332x28 visible=True enabled=True tabstop=True screen=898,1047 332x28 text=[开机自动启动]
+            RoundButton bounds=343,35 120x26 visible=True enabled=True tabstop=True screen=1241,1048 120x26 text=[隐藏到托盘]
+            RoundButton bounds=3,67 104x28 visible=True enabled=True tabstop=True screen=901,1080 104x28 text=[查看日志]
+            RoundButton bounds=343,67 104x28 visible=True enabled=True tabstop=True screen=1241,1080 104x28 text=[退出程序]
+    Panel bounds=881,3 296x814 visible=True enabled=True tabstop=False screen=1571,324 296x814
+      TableLayoutPanel bounds=4,8 276x794 visible=True enabled=True tabstop=False screen=1575,332 276x794
+        RailCard bounds=0,0 276x174 visible=True enabled=True tabstop=False screen=1575,332 276x174
+          Panel bounds=14,35 248x128 visible=True enabled=True tabstop=False screen=1589,367 248x128
+            SmoothPanel bounds=0,0 248x128 visible=True enabled=True tabstop=False screen=1589,367 231x128
+              Label bounds=0,0 112x20 visible=True enabled=True tabstop=False screen=1589,367 112x20 text=[原文]
+              Label bounds=116,0 112x20 visible=True enabled=True tabstop=False screen=1705,367 112x20 text=[替换内容]
+              Label bounds=0,20 112x20 visible=True enabled=True tabstop=False screen=1589,387 112x20 text=[谢谢你]
+              Label bounds=116,20 112x20 visible=True enabled=True tabstop=False screen=1705,387 112x20 text=[谢谢你喵]
+              Label bounds=0,41 112x20 visible=True enabled=True tabstop=False screen=1589,408 112x20 text=[哈哈]
+              Label bounds=116,41 112x20 visible=True enabled=True tabstop=False screen=1705,408 112x20 text=[哈哈哈]
+              Label bounds=0,62 112x20 visible=True enabled=True tabstop=False screen=1589,429 112x20 text=[好的]
+              Label bounds=116,62 112x20 visible=True enabled=True tabstop=False screen=1705,429 112x20 text=[好哒]
+              Label bounds=0,83 112x20 visible=True enabled=True tabstop=False screen=1589,450 112x20 text=[可以]
+              Label bounds=116,83 112x20 visible=True enabled=True tabstop=False screen=1705,450 112x20 text=[可以呀]
+              Label bounds=0,104 112x20 visible=True enabled=True tabstop=False screen=1589,471 112x20 text=[再见]
+              Label bounds=116,104 112x20 visible=True enabled=True tabstop=False screen=1705,471 112x20 text=[拜拜]
+              Label bounds=0,125 112x20 visible=True enabled=True tabstop=False screen=1589,492 112x20 text=[晚安]
+              Label bounds=116,125 112x20 visible=True enabled=True tabstop=False screen=1705,492 112x20 text=[晚安喵]
+          Panel bounds=14,9 248x26 visible=True enabled=True tabstop=False screen=1589,341 248x26
+            Label bounds=0,4 63x23 visible=True enabled=True tabstop=False screen=1589,345 63x23 text=[喵化规则]
+            LinkLabel bounds=191,7 57x19 visible=True enabled=True tabstop=True screen=1780,348 57x19 text=[管理规则 ›]
+        RailCard bounds=0,182 276x196 visible=True enabled=True tabstop=False screen=1575,514 276x196
+          Panel bounds=14,35 248x150 visible=True enabled=True tabstop=False screen=1589,549 248x150
+            TableLayoutPanel bounds=0,0 248x150 visible=True enabled=True tabstop=False screen=1589,549 248x150
+              StyleChip bounds=3,3 118x44 visible=True enabled=True tabstop=True screen=1592,552 118x44 text=[萌系]
+              StyleChip bounds=127,3 118x44 visible=True enabled=True tabstop=True screen=1716,552 118x44 text=[元气]
+              StyleChip bounds=3,53 118x44 visible=True enabled=True tabstop=True screen=1592,602 118x44 text=[慵懒]
+              StyleChip bounds=127,53 118x44 visible=True enabled=True tabstop=True screen=1716,602 118x44 text=[撒娇]
+              StyleChip bounds=3,103 118x44 visible=True enabled=True tabstop=True screen=1592,652 118x44 text=[冷淡]
+              StyleChip bounds=127,103 118x44 visible=True enabled=True tabstop=True screen=1716,652 118x44 text=[颜文字在前]
+          Panel bounds=14,9 248x26 visible=True enabled=True tabstop=False screen=1589,523 248x26
+            Label bounds=0,4 63x23 visible=True enabled=True tabstop=False screen=1589,527 63x23 text=[喵化风格]
+            LinkLabel bounds=191,7 57x19 visible=True enabled=True tabstop=True screen=1780,530 57x19 text=[更多风格 ›]
+        RailCard bounds=0,386 276x124 visible=True enabled=True tabstop=False screen=1575,718 276x124
+          Panel bounds=14,35 248x78 visible=True enabled=True tabstop=False screen=1589,753 248x78
+            SmoothPanel bounds=0,0 248x78 visible=True enabled=True tabstop=False screen=1589,753 248x78
+              Label bounds=0,0 64x22 visible=True enabled=True tabstop=False screen=1589,753 64x22 text=[(｡•́︿•̀｡)]
+              Label bounds=69,0 73x22 visible=True enabled=True tabstop=False screen=1658,753 73x22 text=[(´；ω；`)]
+              Label bounds=147,0 52x22 visible=True enabled=True tabstop=False screen=1736,753 52x22 text=[(ᵕ﹏ᵕ)]
+              Label bounds=0,26 72x22 visible=True enabled=True tabstop=False screen=1589,779 72x22 text=[(｡╥﹏╥｡)]
+              Label bounds=77,26 64x22 visible=True enabled=True tabstop=False screen=1666,779 64x22 text=[(｡•́︵•̀｡)]
+              Label bounds=146,26 74x22 visible=True enabled=True tabstop=False screen=1735,779 74x22 text=[(っ- ‸ - ς)]
+              Label bounds=0,52 72x22 visible=True enabled=True tabstop=False screen=1589,805 72x22 text=[(｡>﹏<｡)]
+              Label bounds=77,52 82x22 visible=True enabled=True tabstop=False screen=1666,805 82x22 text=[(´。＿。｀)]
+          Panel bounds=14,9 248x26 visible=True enabled=True tabstop=False screen=1589,727 248x26
+            Label bounds=0,4 63x23 visible=True enabled=True tabstop=False screen=1589,731 63x23 text=[颜文字库]
+            LinkLabel bounds=214,7 34x19 visible=True enabled=True tabstop=True screen=1803,734 34x19 text=[管理 ›]
+        RailCard bounds=0,518 276x276 visible=True enabled=True tabstop=False screen=1575,850 276x276
+          Panel bounds=14,35 248x230 visible=True enabled=True tabstop=False screen=1589,885 248x230
+            Label bounds=0,0 90x24 visible=True enabled=True tabstop=False screen=1589,885 90x24 text=[喵化次数]
+            Label bounds=94,0 140x24 visible=True enabled=True tabstop=False screen=1683,885 140x24 text=[134 次]
+            Label bounds=0,26 90x24 visible=True enabled=True tabstop=False screen=1589,911 90x24 text=[今日]
+            Label bounds=94,26 140x24 visible=True enabled=True tabstop=False screen=1683,911 140x24 text=[47 次]
+            Label bounds=0,52 90x24 visible=True enabled=True tabstop=False screen=1589,937 90x24 text=[喵化等级]
+            Label bounds=94,52 140x24 visible=True enabled=True tabstop=False screen=1683,937 140x24 text=[Lv.4]
+            LevelBar bounds=0,80 248x18 visible=True enabled=True tabstop=True screen=1589,965 248x18
+            Label bounds=0,102 240x20 visible=True enabled=True tabstop=False screen=1589,987 240x20 text=[距离 Lv.5 还差 26 次　最常用 (´･ω･`]
+          Panel bounds=14,9 248x26 visible=True enabled=True tabstop=False screen=1589,859 248x26
+            Label bounds=0,4 63x23 visible=True enabled=True tabstop=False screen=1589,863 63x23 text=[今日统计]
+            LinkLabel bounds=214,7 34x19 visible=True enabled=True tabstop=True screen=1803,866 34x19 text=[更多 ›]
+hit at (40,675) -> hwnd=0xF0DBA class=WindowsForms10.Window.8.app.0.1ca0192_r6_ad1
+hit at (58,675) -> hwnd=0xF0DBA class=WindowsForms10.Window.8.app.0.1ca0192_r6_ad1
+hit at (70,675) -> hwnd=0xF0DBA class=WindowsForms10.Window.8.app.0.1ca0192_r6_ad1
+hit at (82,675) -> hwnd=0xF0DBA class=WindowsForms10.Window.8.app.0.1ca0192_r6_ad1
+hit at (92,675) -> hwnd=0xF0DBA class=WindowsForms10.Window.8.app.0.1ca0192_r6_ad1

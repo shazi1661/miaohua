@@ -1,0 +1,445 @@
+﻿2026-10-02 16:58:32  rules loaded: 7 replacements, 6 kaomoji, each=False, auto=True
+2026-10-02 16:58:32  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-02 16:58:32  hotkey transform [Ctrl+Shift+M] ok
+2026-10-02 16:58:32  hotkey pause [Ctrl+Alt+Shift+P] ok
+2026-10-02 16:58:32  hotkey reload [Ctrl+Alt+Shift+R] ok
+2026-10-02 16:58:32  started; version=2.11 (2026-10-02)  autorun=False
+2026-10-02 16:58:32  news loaded: 更新记录.txt (14946 chars)
+2026-10-02 16:58:33  slow background paint: 65ms for 1180x820
+2026-10-02 16:58:33  model: starting llama-server.exe on port 1234 (qwen2.5-3b-instruct-q4_k_m.gguf)
+2026-10-02 16:58:36  model: ready at http://127.0.0.1:1234
+2026-10-02 16:58:36  model: warmed up (happy)
+2026-10-02 16:59:02  news loaded: 更新记录.txt (14946 chars)
+2026-10-02 17:00:01  rules loaded: 7 replacements, 6 kaomoji, each=False, auto=True
+2026-10-02 17:00:01  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-02 17:00:01  news loaded: 更新记录.txt (14946 chars)
+2026-10-02 17:01:29  rules loaded: 7 replacements, 6 kaomoji, each=False, auto=True
+2026-10-02 17:01:29  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-02 17:01:29  hotkey transform [Ctrl+Shift+M] ok
+2026-10-02 17:01:29  hotkey pause [Ctrl+Alt+Shift+P] ok
+2026-10-02 17:01:29  hotkey reload [Ctrl+Alt+Shift+R] ok
+2026-10-02 17:01:29  started; version=2.11 (2026-10-02)  autorun=False
+2026-10-02 17:01:29  news loaded: 更新记录.txt (14946 chars)
+2026-10-02 17:01:30  slow background paint: 162ms for 1180x820
+2026-10-02 17:01:30  model: starting llama-server.exe on port 1234 (qwen2.5-3b-instruct-q4_k_m.gguf)
+2026-10-02 17:01:41  model: ready at http://127.0.0.1:1234
+2026-10-02 17:01:47  model: warmed up (happy)
+2026-10-02 17:03:48  auto: nothing was copied (box empty or nothing selected) - aborted, no paste (selection collapsed)
+2026-10-02 17:03:54  news loaded: 更新记录.txt (14946 chars)
+2026-10-02 17:03:55  news loaded: 更新记录.txt (14946 chars)
+2026-10-02 17:07:48  rules loaded: 7 replacements, 6 kaomoji, each=False, auto=True
+2026-10-02 17:07:48  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-02 17:07:48  hotkey transform [Ctrl+Shift+M] ok
+2026-10-02 17:07:48  hotkey pause [Ctrl+Alt+Shift+P] ok
+2026-10-02 17:07:48  hotkey reload [Ctrl+Alt+Shift+R] ok
+2026-10-02 17:07:48  started; version=2.11 (2026-10-02)  autorun=False
+2026-10-02 17:07:48  news loaded: 更新记录.txt (14946 chars)
+2026-10-02 17:07:48  slow background paint: 75ms for 1180x820
+2026-10-02 17:07:49  model: starting llama-server.exe on port 1234 (qwen2.5-3b-instruct-q4_k_m.gguf)
+2026-10-02 17:07:52  model: ready at http://127.0.0.1:1234
+2026-10-02 17:07:53  model: warmed up (happy)
+2026-10-02 17:22:39  rules loaded: 7 replacements, 6 kaomoji, each=False, auto=True
+2026-10-02 17:22:39  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-02 17:22:40  hotkey transform [Ctrl+Shift+M] ok
+2026-10-02 17:22:40  hotkey pause [Ctrl+Alt+Shift+P] ok
+2026-10-02 17:22:40  hotkey reload [Ctrl+Alt+Shift+R] ok
+2026-10-02 17:22:40  started; version=2.11 (2026-10-02)  autorun=False
+2026-10-02 17:22:40  news loaded: 更新记录.txt (14946 chars)
+2026-10-02 17:22:40  slow background paint: 141ms for 1180x820
+2026-10-02 17:22:40  model: starting llama-server.exe on port 1234 (qwen2.5-3b-instruct-q4_k_m.gguf)
+2026-10-02 17:22:44  model: ready at http://127.0.0.1:1234
+2026-10-02 17:22:46  model: warmed up (happy)
+2026-10-02 17:25:48  auto: nothing was copied (box empty or nothing selected) - aborted, no paste (selection collapsed)
+2026-10-02 17:27:24  rules loaded: 7 replacements, 6 kaomoji, each=False, auto=True
+2026-10-02 17:27:24  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-02 17:27:25  hotkey transform [Ctrl+Shift+M] ok
+2026-10-02 17:27:25  hotkey pause [Ctrl+Alt+Shift+P] ok
+2026-10-02 17:27:25  hotkey reload [Ctrl+Alt+Shift+R] ok
+2026-10-02 17:27:25  started; version=2.11 (2026-10-02)  autorun=False
+2026-10-02 17:27:25  news loaded: 更新记录.txt (14946 chars)
+2026-10-02 17:27:25  slow background paint: 144ms for 1180x820
+2026-10-02 17:27:25  model: starting llama-server.exe on port 1234 (qwen2.5-3b-instruct-q4_k_m.gguf)
+2026-10-02 17:27:34  model: ready at http://127.0.0.1:1234
+2026-10-02 17:27:39  model: warmed up (happy)
+2026-10-02 17:28:23  auto: nothing was copied (box empty or nothing selected) - aborted, no paste (selection collapsed)
+2026-10-02 17:28:37  auto: nothing was copied (box empty or nothing selected) - aborted, no paste (selection collapsed)
+2026-10-02 17:31:28  slow resize layout: 73ms at 1180x820
+2026-10-02 17:31:33  rules loaded: 7 replacements, 8 kaomoji, each=False, auto=True
+2026-10-02 17:31:33  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-02 17:31:33  style applied: template=[{后缀}{颜文字}] suffix=[……喵] kaomoji=8 opener=8 closer=10 questioncloser=6 exclaimcloser=6 happycloser=6 sadcloser=6 angrycloser=6 greetingcloser=4 farewellcloser=4 lovecloser=4 praisecloser=4 thankscloser=3 apologycloser=3 congratcloser=3 invitecloser=3 surprisecloser=3 fearcloser=3 tiredcloser=3 boredcloser=3 disappointedcloser=3 comfortcloser=4 charmcloser=3
+2026-10-02 17:31:33  rules loaded: 7 replacements, 8 kaomoji, each=False, auto=True
+2026-10-02 17:31:33  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-02 17:31:33  style applied: 慵懒 (tone=true)
+2026-10-02 17:31:33  rules loaded: 7 replacements, 8 kaomoji, each=False, auto=True
+2026-10-02 17:31:33  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-02 17:31:33  style applied: template=[{后缀}{颜文字}] suffix=[喵~] kaomoji=8 opener=10 closer=12 questioncloser=8 exclaimcloser=8 happycloser=8 sadcloser=8 angrycloser=8 greetingcloser=5 farewellcloser=5 lovecloser=5 praisecloser=5 thankscloser=3 apologycloser=3 congratcloser=3 invitecloser=3 surprisecloser=3 fearcloser=3 tiredcloser=3 boredcloser=3 disappointedcloser=3 comfortcloser=4 charmcloser=3
+2026-10-02 17:31:33  rules loaded: 7 replacements, 8 kaomoji, each=False, auto=True
+2026-10-02 17:31:33  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-02 17:31:33  style applied: 黏人 (tone=true)
+2026-10-02 17:31:34  rules loaded: 7 replacements, 8 kaomoji, each=False, auto=True
+2026-10-02 17:31:34  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-02 17:31:34  style applied: template=[{后缀}{颜文字}] suffix=[喵！] kaomoji=8 opener=8 closer=10 questioncloser=6 exclaimcloser=6 happycloser=6 sadcloser=6 angrycloser=6 greetingcloser=4 farewellcloser=4 lovecloser=4 praisecloser=4 thankscloser=3 apologycloser=3 congratcloser=3 invitecloser=3 surprisecloser=3 fearcloser=3 tiredcloser=3 boredcloser=3 disappointedcloser=3 comfortcloser=4 charmcloser=3
+2026-10-02 17:31:34  rules loaded: 7 replacements, 8 kaomoji, each=False, auto=True
+2026-10-02 17:31:34  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-02 17:31:34  style applied: 元气 (tone=true)
+2026-10-02 17:31:35  rules loaded: 7 replacements, 8 kaomoji, each=False, auto=True
+2026-10-02 17:31:35  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-02 17:31:35  style applied: 只加末尾 (tone=false, level=轻度)
+2026-10-02 17:31:35  rules loaded: 7 replacements, 8 kaomoji, each=False, auto=True
+2026-10-02 17:31:35  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-02 17:31:35  style applied: template=[{后缀}{颜文字}] suffix=[……喵] kaomoji=8 opener=8 closer=10 questioncloser=6 exclaimcloser=6 happycloser=6 sadcloser=6 angrycloser=6 greetingcloser=4 farewellcloser=4 lovecloser=4 praisecloser=4 thankscloser=3 apologycloser=3 congratcloser=3 invitecloser=3 surprisecloser=3 fearcloser=3 tiredcloser=3 boredcloser=3 disappointedcloser=3 comfortcloser=4 charmcloser=3
+2026-10-02 17:31:35  rules loaded: 7 replacements, 8 kaomoji, each=False, auto=True
+2026-10-02 17:31:35  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-02 17:31:35  style applied: 委屈 (tone=true)
+2026-10-02 17:31:35  rules loaded: 7 replacements, 6 kaomoji, each=False, auto=True
+2026-10-02 17:31:35  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-02 17:31:35  style applied: template=[{后缀}{颜文字}] suffix=[嘶——] kaomoji=6 opener=6 closer=8 questioncloser=5 exclaimcloser=5 happycloser=4 sadcloser=4 angrycloser=5 greetingcloser=4 farewellcloser=4 lovecloser=4 praisecloser=4 thankscloser=3 apologycloser=3 congratcloser=3 invitecloser=3 surprisecloser=3 fearcloser=4 tiredcloser=3 boredcloser=3 disappointedcloser=3 comfortcloser=4 charmcloser=3
+2026-10-02 17:31:35  rules loaded: 7 replacements, 6 kaomoji, each=False, auto=True
+2026-10-02 17:31:35  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-02 17:31:35  style applied: 应激 (tone=true)
+2026-10-02 17:31:36  rules loaded: 7 replacements, 6 kaomoji, each=False, auto=True
+2026-10-02 17:31:36  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-02 17:31:36  style applied: template=[{后缀}{颜文字}] suffix=[嘶——] kaomoji=6 opener=6 closer=8 questioncloser=5 exclaimcloser=5 happycloser=4 sadcloser=4 angrycloser=5 greetingcloser=4 farewellcloser=4 lovecloser=4 praisecloser=4 thankscloser=3 apologycloser=3 congratcloser=3 invitecloser=3 surprisecloser=3 fearcloser=4 tiredcloser=3 boredcloser=3 disappointedcloser=3 comfortcloser=4 charmcloser=3
+2026-10-02 17:31:36  rules loaded: 7 replacements, 6 kaomoji, each=False, auto=True
+2026-10-02 17:31:36  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-02 17:31:36  style applied: 应激 (tone=true)
+2026-10-02 17:31:38  news loaded: 更新记录.txt (14946 chars)
+2026-10-02 17:31:47  model: bundled server stopped
+2026-10-02 17:39:02  rules loaded: 7 replacements, 6 kaomoji, each=False, auto=True
+2026-10-02 17:39:02  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-02 17:39:02  hotkey transform [Ctrl+Shift+M] ok
+2026-10-02 17:39:02  hotkey pause [Ctrl+Alt+Shift+P] ok
+2026-10-02 17:39:02  hotkey reload [Ctrl+Alt+Shift+R] ok
+2026-10-02 17:39:02  started; version=2.11 (2026-10-02)  autorun=False
+2026-10-02 17:39:02  news loaded: 更新记录.txt (14946 chars)
+2026-10-02 17:39:02  slow background paint: 51ms for 1180x820
+2026-10-02 17:39:02  model: starting llama-server.exe on port 1234 (qwen2.5-3b-instruct-q4_k_m.gguf)
+2026-10-02 17:39:07  model: ready at http://127.0.0.1:1234
+2026-10-02 17:39:07  model: warmed up (happy)
+2026-10-02 17:39:29  news loaded: 更新记录.txt (14946 chars)
+2026-10-02 17:39:35  auto: nothing was copied (box empty or nothing selected) - aborted, no paste (selection collapsed)
+2026-10-02 17:39:41  auto: nothing was copied (box empty or nothing selected) - aborted, no paste (selection collapsed)
+2026-10-02 17:40:14  model: bundled server stopped
+2026-10-02 22:42:23  rules loaded: 7 replacements, 6 kaomoji, each=False, auto=True
+2026-10-02 22:42:23  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-02 22:42:23  hotkey transform [Ctrl+Shift+M] ok
+2026-10-02 22:42:23  hotkey pause [Ctrl+Alt+Shift+P] ok
+2026-10-02 22:42:23  hotkey reload [Ctrl+Alt+Shift+R] ok
+2026-10-02 22:42:23  started; version=2.11 (2026-10-02)  autorun=False
+2026-10-02 22:42:23  news loaded: 更新记录.txt (14946 chars)
+2026-10-02 22:42:24  model: starting llama-server.exe on port 1234 (qwen2.5-3b-instruct-q4_k_m.gguf)
+2026-10-02 22:42:27  model: ready at http://127.0.0.1:1234
+2026-10-02 22:42:28  model: warmed up (happy)
+2026-10-03 08:52:45  rules loaded: 7 replacements, 6 kaomoji, each=False, auto=True
+2026-10-03 08:52:45  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 08:52:45  hotkey transform [Ctrl+Shift+M] ok
+2026-10-03 08:52:45  hotkey pause [Ctrl+Alt+Shift+P] ok
+2026-10-03 08:52:45  hotkey reload [Ctrl+Alt+Shift+R] ok
+2026-10-03 08:52:45  started; version=2.11 (2026-10-02)  autorun=False
+2026-10-03 08:52:45  news loaded: 更新记录.txt (14946 chars)
+2026-10-03 08:52:46  slow background paint: 54ms for 1180x820
+2026-10-03 08:52:46  model: starting llama-server.exe on port 1234 (qwen2.5-3b-instruct-q4_k_m.gguf)
+2026-10-03 08:52:49  model: ready at http://127.0.0.1:1234
+2026-10-03 08:52:49  model: warmed up (happy)
+2026-10-03 08:52:50  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 08:52:50  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 08:52:50  style applied: template=[{后缀}{颜文字}] suffix=[喵！] kaomoji=10 opener=12 closer=16 questioncloser=10 exclaimcloser=10 happycloser=10 sadcloser=10 angrycloser=10 greetingcloser=6 farewellcloser=6 lovecloser=6 praisecloser=6 thankscloser=5 apologycloser=5 congratcloser=4 invitecloser=4 surprisecloser=5 fearcloser=5 tiredcloser=5 boredcloser=4 disappointedcloser=5 comfortcloser=10 charmcloser=5
+2026-10-03 08:52:50  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 08:52:50  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 08:52:50  style applied: 傲娇 (tone=true)
+2026-10-03 08:52:56    read  [你好]
+2026-10-03 08:52:56    write [哼，你好喵！(￣ヘ￣)，哦，是你啊……我、我刚好在忙]
+2026-10-03 08:52:57    tone: 打招呼 · 来源：关键字（社交类）
+2026-10-03 08:52:57  auto: transformed 2 -> 26 chars  [fg start=QQ read=QQ paste=QQ->QQ]
+2026-10-03 08:53:03    read  [哼，你好喵！(￣ヘ￣)，哦，是你啊……我、我刚好在你好]
+2026-10-03 08:53:03    write [哼，你好喵！(￣ヘ￣)，哦，是你啊……我、我刚好在你好喵！(｀・ω・´)，哼，终于想起我了？]
+2026-10-03 08:53:04    tone: 打招呼 · 来源：关键字（社交类）
+2026-10-03 08:53:04  auto: transformed 27 -> 46 chars  [fg start=QQ read=QQ paste=QQ->QQ]
+2026-10-03 08:54:08  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 08:54:08  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 08:54:08  news loaded: 更新记录.txt (14946 chars)
+2026-10-03 08:54:33  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 08:54:33  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 08:54:33  news loaded: 更新记录.txt (14946 chars)
+2026-10-03 08:54:40  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 08:54:40  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 08:54:40  news loaded: 更新记录.txt (14946 chars)
+2026-10-03 08:55:10  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 08:55:10  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 08:55:10  news loaded: 更新记录.txt (14946 chars)
+2026-10-03 08:56:29  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 08:56:29  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 08:56:29  hotkey transform [Ctrl+Shift+M] ok
+2026-10-03 08:56:29  hotkey pause [Ctrl+Alt+Shift+P] ok
+2026-10-03 08:56:29  hotkey reload [Ctrl+Alt+Shift+R] ok
+2026-10-03 08:56:29  started; version=2.12 (2026-10-02)  autorun=False
+2026-10-03 08:56:29  news loaded: 更新记录.txt (16360 chars)
+2026-10-03 08:56:29  slow background paint: 53ms for 1180x820
+2026-10-03 08:56:30  model: starting llama-server.exe on port 1234 (qwen2.5-3b-instruct-q4_k_m.gguf)
+2026-10-03 08:56:32  model: ready at http://127.0.0.1:1234
+2026-10-03 08:56:32  model: warmed up (happy)
+2026-10-03 08:58:05    read  [你好]
+2026-10-03 08:58:05    write [谁、谁要理你啊！你好喵！(￣ー￣)，……你好。就、就这样，没别的意思]
+2026-10-03 08:58:06    tone: 打招呼 · 来源：关键字（社交类）
+2026-10-03 08:58:06  auto: transformed 2 -> 34 chars  [fg start=QQ read=QQ paste=QQ->QQ]
+2026-10-03 08:58:09    read  [谁、谁要理你啊！你好喵！(￣ー￣)，……你好。就、就这样，没别的意你好好]
+2026-10-03 08:58:09    write [谁、谁要理你啊！你好你好好喵！(｀へ´)，哼，是你啊……有事吗]
+2026-10-03 08:58:10    tone: 打招呼 · 来源：关键字（社交类）
+2026-10-03 08:58:10  auto: transformed 36 -> 31 chars  [fg start=QQ read=QQ paste=QQ->QQ]
+2026-10-03 09:07:21  auto: nothing was copied (box empty or nothing selected) - aborted, no paste (selection collapsed)
+2026-10-03 09:08:28  slow resize layout: 71ms at 1180x820
+2026-10-03 09:09:57  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 09:09:57  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 09:09:58  news loaded: 更新记录.txt (17318 chars)
+2026-10-03 09:10:05  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 09:10:05  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 09:10:05  hotkey transform [Ctrl+Shift+M] ok
+2026-10-03 09:10:05  hotkey pause [Ctrl+Alt+Shift+P] ok
+2026-10-03 09:10:05  hotkey reload [Ctrl+Alt+Shift+R] ok
+2026-10-03 09:10:05  started; version=2.12 (2026-10-02)  autorun=False
+2026-10-03 09:10:05  news loaded: 更新记录.txt (17530 chars)
+2026-10-03 09:10:05  slow background paint: 51ms for 1180x820
+2026-10-03 09:10:05  model: starting llama-server.exe on port 1234 (qwen2.5-3b-instruct-q4_k_m.gguf)
+2026-10-03 09:10:08  model: ready at http://127.0.0.1:1234
+2026-10-03 09:10:08  model: warmed up (happy)
+2026-10-03 09:17:38  auto: nothing was copied (box empty or nothing selected) - aborted, no paste (selection collapsed)
+2026-10-03 09:18:28  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 09:18:28  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 09:18:28  hotkey transform [Ctrl+Shift+M] ok
+2026-10-03 09:18:28  hotkey pause [Ctrl+Alt+Shift+P] ok
+2026-10-03 09:18:28  hotkey reload [Ctrl+Alt+Shift+R] ok
+2026-10-03 09:18:28  started; version=2.12 (2026-10-02)  autorun=False
+2026-10-03 09:18:28  model: something already answers at http://127.0.0.1:1234 - not starting the bundled one
+2026-10-03 09:18:28  news loaded: 更新记录.txt (17530 chars)
+2026-10-03 09:18:28  slow background paint: 56ms for 1180x820
+2026-10-03 09:18:43  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 09:18:43  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 09:18:43  news loaded: 更新记录.txt (17530 chars)
+2026-10-03 09:18:43  slow background paint: 52ms for 1180x820
+2026-10-03 09:23:26  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 09:23:26  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 09:23:27  news loaded: 更新记录.txt (17530 chars)
+2026-10-03 09:23:27  slow background paint: 56ms for 1180x820
+2026-10-03 09:32:38  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 09:32:38  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 09:32:39  news loaded: 更新记录.txt (17530 chars)
+2026-10-03 09:32:39  slow background paint: 53ms for 1180x820
+2026-10-03 09:35:13  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 09:35:13  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 09:35:13  news loaded: 更新记录.txt (17530 chars)
+2026-10-03 09:35:13  slow background paint: 59ms for 1180x820
+2026-10-03 09:36:33  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 09:36:33  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 09:36:33  news loaded: 更新记录.txt (17530 chars)
+2026-10-03 09:36:38  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 09:36:38  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 09:36:38  hotkey transform [Ctrl+Shift+M] ok
+2026-10-03 09:36:38  hotkey pause [Ctrl+Alt+Shift+P] ok
+2026-10-03 09:36:38  hotkey reload [Ctrl+Alt+Shift+R] ok
+2026-10-03 09:36:38  started; version=2.12 (2026-10-02)  autorun=False
+2026-10-03 09:36:38  model: something already answers at http://127.0.0.1:1234 - not starting the bundled one
+2026-10-03 09:36:38  news loaded: 更新记录.txt (17530 chars)
+2026-10-03 09:36:39  slow background paint: 54ms for 1180x820
+2026-10-03 09:40:41  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 09:40:41  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 09:40:41  news loaded: 更新记录.txt (17530 chars)
+2026-10-03 09:40:42  slow background paint: 65ms for 1180x820
+2026-10-03 10:25:40  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 10:25:40  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 10:25:40  news loaded: 更新记录.txt (17530 chars)
+2026-10-03 10:25:43  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 10:25:43  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 10:25:43  news loaded: 更新记录.txt (17530 chars)
+2026-10-03 10:25:43  slow background paint: 54ms for 1180x820
+2026-10-03 10:26:10  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 10:26:10  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 10:26:10  news loaded: 更新记录.txt (17530 chars)
+2026-10-03 10:26:10  slow background paint: 52ms for 1180x820
+2026-10-03 10:26:22  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 10:26:22  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 10:26:22  news loaded: 更新记录.txt (17530 chars)
+2026-10-03 10:30:04  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 10:30:04  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 10:30:04  news loaded: 更新记录.txt (17530 chars)
+2026-10-03 10:32:09  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 10:32:09  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 10:32:09  hotkey transform [Ctrl+Shift+M] ok
+2026-10-03 10:32:09  hotkey pause [Ctrl+Alt+Shift+P] ok
+2026-10-03 10:32:09  hotkey reload [Ctrl+Alt+Shift+R] ok
+2026-10-03 10:32:09  started; version=2.12 (2026-10-03)  autorun=False
+2026-10-03 10:32:09  model: something already answers at http://127.0.0.1:1234 - not starting the bundled one
+2026-10-03 10:32:10  news loaded: 更新记录.txt (17530 chars)
+2026-10-03 10:32:10  slow background paint: 53ms for 1180x820
+2026-10-03 10:32:36  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 10:32:36  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 10:33:38  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 10:33:38  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 10:33:38  news loaded: 更新记录.txt (17530 chars)
+2026-10-03 10:34:47  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 10:34:47  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 10:34:47  hotkey transform [Ctrl+Shift+M] ok
+2026-10-03 10:34:47  hotkey pause [Ctrl+Alt+Shift+P] ok
+2026-10-03 10:34:47  hotkey reload [Ctrl+Alt+Shift+R] ok
+2026-10-03 10:34:47  started; version=2.13 (2026-10-03)  autorun=False
+2026-10-03 10:34:47  model: something already answers at http://127.0.0.1:1234 - not starting the bundled one
+2026-10-03 10:34:47  news loaded: 更新记录.txt (18373 chars)
+2026-10-03 10:34:47  slow background paint: 53ms for 1180x820
+2026-10-03 10:36:02  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 10:36:02  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 10:36:02  hotkey transform [Ctrl+Shift+M] ok
+2026-10-03 10:36:02  hotkey pause [Ctrl+Alt+Shift+P] ok
+2026-10-03 10:36:02  hotkey reload [Ctrl+Alt+Shift+R] ok
+2026-10-03 10:36:02  started; version=2.13 (2026-10-03)  autorun=False
+2026-10-03 10:36:02  model: something already answers at http://127.0.0.1:1234 - not starting the bundled one
+2026-10-03 10:36:02  news loaded: 更新记录.txt (18373 chars)
+2026-10-03 10:36:09  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 10:36:09  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 10:36:09  hotkey transform [Ctrl+Shift+M] ok
+2026-10-03 10:36:09  hotkey pause [Ctrl+Alt+Shift+P] ok
+2026-10-03 10:36:09  hotkey reload [Ctrl+Alt+Shift+R] ok
+2026-10-03 10:36:09  started; version=2.13 (2026-10-03)  autorun=False
+2026-10-03 10:36:09  model: something already answers at http://127.0.0.1:1234 - not starting the bundled one
+2026-10-03 10:36:09  news loaded: 更新记录.txt (18373 chars)
+2026-10-03 10:36:14  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 10:36:14  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 10:36:14  patch rules failed: 未将对象引用设置到对象的实例。
+2026-10-03 10:36:22  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 10:36:22  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 10:36:22  hotkey transform [Ctrl+Shift+M] ok
+2026-10-03 10:36:22  hotkey pause [Ctrl+Alt+Shift+P] ok
+2026-10-03 10:36:22  hotkey reload [Ctrl+Alt+Shift+R] ok
+2026-10-03 10:36:22  started; version=2.13 (2026-10-03)  autorun=False
+2026-10-03 10:36:22  model: something already answers at http://127.0.0.1:1234 - not starting the bundled one
+2026-10-03 10:36:22  news loaded: 更新记录.txt (18373 chars)
+2026-10-03 10:36:24  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 10:36:24  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 10:36:29  slow background paint: 148ms for 2560x1417
+2026-10-03 10:36:29  slow resize layout: 255ms at 2560x1417
+2026-10-03 10:36:36  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 10:36:36  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 10:37:18  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 10:37:18  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 10:37:26  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 10:37:26  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 10:37:26  hotkey transform [Ctrl+Shift+M] ok
+2026-10-03 10:37:26  hotkey pause [Ctrl+Alt+Shift+P] ok
+2026-10-03 10:37:26  hotkey reload [Ctrl+Alt+Shift+R] ok
+2026-10-03 10:37:26  started; version=2.13 (2026-10-03)  autorun=False
+2026-10-03 10:37:26  model: something already answers at http://127.0.0.1:1234 - not starting the bundled one
+2026-10-03 10:37:26  news loaded: 更新记录.txt (18373 chars)
+2026-10-03 10:37:30  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 10:37:30  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 10:37:35  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 10:37:35  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 10:37:35  hotkey transform [Ctrl+Shift+M] ok
+2026-10-03 10:37:35  hotkey pause [Ctrl+Alt+Shift+P] ok
+2026-10-03 10:37:35  hotkey reload [Ctrl+Alt+Shift+R] ok
+2026-10-03 10:37:35  started; version=2.13 (2026-10-03)  autorun=False
+2026-10-03 10:37:35  model: something already answers at http://127.0.0.1:1234 - not starting the bundled one
+2026-10-03 10:37:35  news loaded: 更新记录.txt (18373 chars)
+2026-10-03 10:39:11  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 10:39:11  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 10:39:11  news loaded: 更新记录.txt (18373 chars)
+2026-10-03 10:39:11  slow background paint: 52ms for 1180x820
+2026-10-03 10:39:47  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 10:39:47  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 10:39:47  news loaded: 更新记录.txt (18373 chars)
+2026-10-03 10:39:47  slow background paint: 51ms for 1180x820
+2026-10-03 10:40:18  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 10:40:18  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 10:40:18  news loaded: 更新记录.txt (18373 chars)
+2026-10-03 10:40:18  slow background paint: 53ms for 1180x820
+2026-10-03 10:40:21  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 10:40:21  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 10:40:21  news loaded: 更新记录.txt (18373 chars)
+2026-10-03 10:40:31  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 10:40:31  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 10:40:31  news loaded: 更新记录.txt (18373 chars)
+2026-10-03 10:41:30  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 10:41:30  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 10:41:30  hotkey transform [Ctrl+Shift+M] ok
+2026-10-03 10:41:30  hotkey pause [Ctrl+Alt+Shift+P] ok
+2026-10-03 10:41:30  hotkey reload [Ctrl+Alt+Shift+R] ok
+2026-10-03 10:41:30  started; version=2.13 (2026-10-03)  autorun=False
+2026-10-03 10:41:30  model: something already answers at http://127.0.0.1:1234 - not starting the bundled one
+2026-10-03 10:41:30  news loaded: 更新记录.txt (18373 chars)
+2026-10-03 10:41:30  slow background paint: 51ms for 1180x820
+2026-10-03 10:42:10  slow background paint: 150ms for 2560x1417
+2026-10-03 10:42:10  slow resize layout: 260ms at 2560x1417
+2026-10-03 10:43:17  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 10:43:17  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 10:43:17  news loaded: 更新记录.txt (18373 chars)
+2026-10-03 10:43:17  slow background paint: 51ms for 1180x820
+2026-10-03 10:43:32  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 10:43:32  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 10:43:32  news loaded: 更新记录.txt (18373 chars)
+2026-10-03 10:43:32  slow background paint: 56ms for 1180x820
+2026-10-03 10:43:35  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 10:43:35  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 10:43:35  news loaded: 更新记录.txt (18373 chars)
+2026-10-03 10:43:38  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 10:43:38  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 10:43:38  news loaded: 更新记录.txt (18373 chars)
+2026-10-03 10:43:38  slow background paint: 54ms for 1180x820
+2026-10-03 10:43:57  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 10:43:57  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 10:43:57  news loaded: 更新记录.txt (18373 chars)
+2026-10-03 10:43:57  slow background paint: 51ms for 1180x820
+2026-10-03 10:45:02  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 10:45:02  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 10:45:02  hotkey transform [Ctrl+Shift+M] ok
+2026-10-03 10:45:02  hotkey pause [Ctrl+Alt+Shift+P] ok
+2026-10-03 10:45:02  hotkey reload [Ctrl+Alt+Shift+R] ok
+2026-10-03 10:45:02  started; version=2.13 (2026-10-03)  autorun=False
+2026-10-03 10:45:02  model: something already answers at http://127.0.0.1:1234 - not starting the bundled one
+2026-10-03 10:45:02  news loaded: 更新记录.txt (18373 chars)
+2026-10-03 10:45:02  slow background paint: 57ms for 1180x820
+2026-10-03 10:47:27  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 10:47:27  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 10:47:27  news loaded: 更新记录.txt (18373 chars)
+2026-10-03 10:48:06  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 10:48:06  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 10:48:06  news loaded: 更新记录.txt (18373 chars)
+2026-10-03 10:49:04  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 10:49:04  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 10:49:04  hotkey transform [Ctrl+Shift+M] ok
+2026-10-03 10:49:04  hotkey pause [Ctrl+Alt+Shift+P] ok
+2026-10-03 10:49:04  hotkey reload [Ctrl+Alt+Shift+R] ok
+2026-10-03 10:49:04  started; version=2.13 (2026-10-03)  autorun=False
+2026-10-03 10:49:04  model: something already answers at http://127.0.0.1:1234 - not starting the bundled one
+2026-10-03 10:49:04  news loaded: 更新记录.txt (18373 chars)
+2026-10-03 10:49:05  slow background paint: 51ms for 1180x820
+2026-10-03 10:49:40  news loaded: 更新记录.txt (18373 chars)
+2026-10-03 10:49:55  news loaded: 更新记录.txt (18373 chars)
+2026-10-03 10:50:31  news loaded: 更新记录.txt (18373 chars)
+2026-10-03 10:51:29  news loaded: 更新记录.txt (18373 chars)
+2026-10-03 10:52:21  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 10:52:21  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 10:52:21  news loaded: 更新记录.txt (18373 chars)
+2026-10-03 10:53:20  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 10:53:20  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 10:53:20  hotkey transform [Ctrl+Shift+M] ok
+2026-10-03 10:53:20  hotkey pause [Ctrl+Alt+Shift+P] ok
+2026-10-03 10:53:20  hotkey reload [Ctrl+Alt+Shift+R] ok
+2026-10-03 10:53:20  started; version=2.13 (2026-10-03)  autorun=False
+2026-10-03 10:53:20  model: something already answers at http://127.0.0.1:1234 - not starting the bundled one
+2026-10-03 10:53:20  news loaded: 更新记录.txt (18373 chars)
+2026-10-03 10:53:20  slow background paint: 55ms for 1180x820
+2026-10-03 10:54:30  slow background paint: 151ms for 2560x1417
+2026-10-03 10:54:30  slow resize layout: 278ms at 2560x1417
+2026-10-03 10:55:06  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 10:55:06  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 10:55:06  news loaded: 更新记录.txt (18373 chars)
+2026-10-03 10:55:06  slow background paint: 52ms for 1180x820
+2026-10-03 10:56:09  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 10:56:09  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 10:56:09  hotkey transform [Ctrl+Shift+M] ok
+2026-10-03 10:56:09  hotkey pause [Ctrl+Alt+Shift+P] ok
+2026-10-03 10:56:09  hotkey reload [Ctrl+Alt+Shift+R] ok
+2026-10-03 10:56:09  started; version=2.13 (2026-10-03)  autorun=False
+2026-10-03 10:56:09  model: something already answers at http://127.0.0.1:1234 - not starting the bundled one
+2026-10-03 10:56:09  news loaded: 更新记录.txt (18373 chars)
+2026-10-03 10:56:09  slow background paint: 51ms for 1180x820
+2026-10-03 10:57:06  rules loaded: 7 replacements, 10 kaomoji, each=False, auto=True
+2026-10-03 10:57:06  auto timing: debounce=300ms  cooldown=600ms  needs 3 separate input events to arm
+2026-10-03 10:57:06  patch rules failed: 未将对象引用设置到对象的实例。

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>喵化助手 · 演示页</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 24px 20px 40px;
+         font: 16px/1.6 system-ui, "Noto Sans CJK SC", sans-serif;
+         background: #fff5f8; color: #4a3640; }
+  h1 { font-size: 22px; margin: 0 0 6px; color: #d4788f; }
+  .sub { color: #9a7f88; font-size: 14px; margin: 0 0 20px; }
+  .box { background: #fff; border: 1px solid #f2d4dd; border-radius: 14px;
+         padding: 16px; box-shadow: 0 2px 10px rgba(212,120,143,.08); }
+  textarea { width: 100%; min-height: 150px; resize: vertical;
+             border: 1px solid #f2d4dd; border-radius: 10px;
+             padding: 12px; font: inherit; font-size: 17px;
+             background: #fffafc; color: #4a3640; outline: none; }
+  textarea:focus { border-color: #e8a0b4; background: #fff; }
+  .tip { margin-top: 14px; padding: 12px 14px; border-radius: 10px;
+         background: #fdeef3; color: #a8627a; font-size: 14px; }
+  .tip b { color: #d4788f; }
+  ol { margin: 10px 0 0; padding-left: 22px; }
+  li { margin: 4px 0; }
+</style>
+
+<h1>在下面打字试试</h1>
+<p class="sub">这一页是给喵化助手做演示用的</p>
+
+<div class="box">
+  <textarea id="t" placeholder="在这里打字……比如：谢谢你，今天天气不错"></textarea>
+
+  <div class="tip">
+    <b>怎么触发：</b>
+    <ol>
+      <li>打完字，<b>停手一会儿</b>（默认 400 毫秒）</li>
+      <li>或者按 <b>Ctrl + Shift + M</b> 立刻转换</li>
+    </ol>
+    <br>
+    默认规则下，「谢谢你，今天天气不错」会变成<br>
+    「谢谢你喵，今天天气不错喵~(=^･ω･^=)」这样。
+  </div>
+</div>
+
+</html>

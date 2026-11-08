@@ -1,0 +1,13 @@
+helper alive      : True
+notepad window    : 3608726
+notepad foreground: True
+BEFORE : 哈哈哈，好哒。(=^‥^=)喵~今天天气不错(=^‥^=)喵~哈哈，好的。今天天气不错
+AFTER  : 哈哈哈，好哒。(=^‥^=)喵~今天天气不错(=^‥^=)喵~哈哈，好的。今天天气不错
+RESULT : NO CHANGE
+--- helper log (last 6) ---
+2026-10-01 21:18:06  rules loaded: 7 replacements, 6 kaomoji, each=True, auto=True
+2026-10-01 21:18:06  hotkey transform [Ctrl+Shift+M] ok
+2026-10-01 21:18:06  hotkey pause [Ctrl+Alt+Shift+P] ok
+2026-10-01 21:18:06  hotkey reload [Ctrl+Alt+Shift+R] ok
+2026-10-01 21:18:06  started; autorun=False
+2026-10-01 21:18:36  hotkey: transformed 43 -> 75 chars

@@ -1,0 +1,364 @@
+# ============================================================
+#  Miaohua rules  (English)
+#
+#  This is the English counterpart of rules.txt. Switch the
+#  interface language and the program reads this file instead.
+#
+#  After editing: press Ctrl+Alt+Shift+R to reload, or use the
+#  "Reload rules" button in Settings.
+#
+#  Save this file as UTF-8.
+#
+#  Parameter names accept both Chinese and English, so you can
+#  mix them freely:   颜文字 = xxx   is the same as   kaomoji = xxx
+#  Case does not matter, and _ / space / . are all ignored.
+# ============================================================
+
+# ---------------- Word replacements ----------------
+# Format:    from => to
+# Applied top to bottom. An empty right side deletes the word.
+# Put longer, more specific rules first so a short rule does not
+# swallow them.
+#
+# Note: the sentence tail (meow~ + kaomoji) is added automatically at the
+# end, so never put "meow" in these replacements - it would double up.
+# Also mind CHAINING: "thank you => thanks a lot" is followed by the rule
+# for "thanks", so keep replacements that cannot feed into each other.
+thank you => thanks a lot
+Thank you => Thanks a lot
+hello => hiya
+Hello => Hiya
+okay => okie~
+OK => Okie~
+ok => okie~
+yes => yea~
+Yes => Yea~
+no => nope
+No => Nope
+sorry => so sorry
+Sorry => So sorry
+good night => night night
+goodnight => night night
+bye => byee~
+Bye => Byee~
+really => rly
+because => cuz
+
+# ---------------- Sentence tail ----------------
+# The template decides how the kaomoji and the suffix are joined.
+# Two placeholders:
+#   {kaomoji}  picks one of the candidates below at random
+#   {suffix}   the fixed suffix
+# ★ In English the suffix and the kaomoji are separated by a
+#   space, otherwise they run into each other.
+模板 = {后缀}{颜文字}
+后缀 = meow~
+
+# Kaomoji candidates (one per line, picked at random)
+# Kaomoji candidates (one per line, picked at random)
+# These are the ones Western users actually type.
+颜文字 = (=^･ω･^=)
+颜文字 = (=^‥^=)
+颜文字 = :3
+颜文字 = >w<
+颜文字 = uwu
+颜文字 = (＾▽＾)
+
+# If the sentence already ends with one of these, nothing is added
+# (stops "meow~" piling up when you press the key twice).
+skipend = meow~
+skipend = nya
+skipend = ~
+skipend = :3
+skipend = )
+
+# true  = add the tail at the end of every sentence
+# false = only once, at the very end of the whole text
+eachsentence = true
+
+# ---------------- Hotkeys ----------------
+# Join modifier keys with +. The last key can be A-Z, 0-9 or F1-F24.
+#   e.g.  Ctrl+Shift+M    Alt+F9    Ctrl+Alt+Shift+P
+# These are GLOBAL hotkeys, so avoid common ones like Ctrl+C.
+# If a combination is already taken, the log says FAILED - pick
+# another and reload.
+hotkey_transform = Ctrl+Shift+M
+hotkey_pause = Ctrl+Alt+Shift+P
+hotkey_reload = Ctrl+Alt+Shift+R
+
+# ---------------- Auto mode ----------------
+# true  = transform after you stop typing
+# false = only when you press the hotkey
+automode = true
+
+# How many milliseconds after you stop typing to fire
+debounce = 700
+
+# Which programs it works in (process names, no .exe,
+# separated by commas or spaces). Leave empty for all programs.
+whitelist = QQ, Discord, Telegram, WhatsApp, Slack, Code, chrome, msedge, firefox
+
+# ---------------- Level ----------------
+# light / normal / heavy
+level = normal
+
+# ---------------- Tone ----------------
+# Pick ONE. Setting a tone turns the look off, and vice versa.
+# (style files: style-tsundere.txt etc. are Chinese-only for now.)
+# tonestyle =
+
+# ---------------- Image guard ----------------
+# ★ When the chat box has an image in it, do nothing at all.
+#   QQ and WeChat never put the image on the clipboard, so the
+#   "select all + paste" step would wipe it. Turn this off if you
+#   would rather transform anyway and lose the image.
+imageguard = true
+
+# ---------------- Interface language ----------------
+# zh = Chinese, en = English
+language = en
+
+开头 = Hmph, 
+开头 = I-it's not like that... 
+开头 = B-baka! 
+开头 = N-nobody asked... 
+开头 = D-don't get the wrong idea! 
+开头 = ...hmph. 
+开头 = L-listen here, 
+开头 = Honestly... 
+开头 = Ugh... 
+开头 = W-who'd want to talk to you?! 
+开头 = Hmph, look, 
+开头 = W-well... 
+结尾 = , it's not like I said it for you... really, it's not
+结尾 = , hmph, d-don't get me wrong... I just happened to mention it
+结尾 = , i-it's not like I'm happy about it... okay, maybe a little
+结尾 = , y-you idiot... but, thanks, I guess
+结尾 = , i-it's not like I was worried! ...I just thought of it
+结尾 = , shut up... but, you're right
+结尾 = , fine, whatever... I'll go with what you said
+结尾 = , hmph, f-fine... just remember to reply
+结尾 = , it's not like I did this for you... don't read into it
+结尾 = , d-don't flatter yourself... but, do whatever you want
+结尾 = , i-it's not like I was waiting... I just passed by
+结尾 = , idiot... n-next time, tell me earlier
+结尾 = , hmph, I don't even care... really
+结尾 = , ...I-I mean, it's not like I mind listening
+结尾 = , d-don't get cocky... I-I'm just in a good mood
+结尾 = , honestly... what am I supposed to do with you
+问句结尾 = , w-why are you asking me... does it matter
+问句结尾 = , I-I don't know! ...fine, I'd guess it's
+问句结尾 = , w-who'd tell you... but you can guess
+问句结尾 = , ...you guess. I-I can't say it
+问句结尾 = , d-don't ask me that... honestly
+问句结尾 = , hmph, why should I tell you... unless you go first
+问句结尾 = , f-figure it out yourself! ...idiot
+问句结尾 = , ...does it matter? F-fine, I'll say it
+问句结尾 = , g-go ask someone else... i-it's not like I won't tell you
+问句结尾 = , w-why should I answer that... you want to know?
+叹句结尾 = , s-shut up! ...but that's kind of impressive
+叹句结尾 = , hmph! ...okay, that IS pretty good
+叹句结尾 = , d-don't make a big deal of it! ...I only just found out too
+叹句结尾 = , what's there to be smug about... I-I'm actually impressed
+叹句结尾 = , ...do what you want. Hmph
+叹句结尾 = , hmph, childish! ...but I'll come along
+叹句结尾 = , I know, I know! ...you're so noisy
+叹句结尾 = , d-don't shout so loud... I heard you
+叹句结尾 = , ...you're impossible. But, fine
+叹句结尾 = , okay, okay, I heard you... stop yelling
+开心结尾 = , h-hmph! It's not like I'm happy... I'm smiling on the inside
+开心结尾 = , ...f-fine, you win. Just this once
+开心结尾 = , d-don't expect me to praise you... it was okay, I guess
+开心结尾 = , I-I suppose it counts as good news... congratulations
+开心结尾 = , ...hmph, not bad. I'm actually thrilled
+开心结尾 = , i-it's not like I'm smiling! ...really
+开心结尾 = , ...it's not that impressive. But, thank you
+开心结尾 = , hmph, you won't be so lucky next time... this one's yours
+开心结尾 = , d-don't get carried away... but, congratulations
+开心结尾 = , ...fine, it IS pretty good. I'll admit it this once
+难过结尾 = , ...i-it's not like I'm sad. Really
+难过结尾 = , ...hmph, I-I'm fine. Stop asking
+难过结尾 = , ...i-it's not like I need company. I really don't
+难过结尾 = , ...i-if you're bored, you could talk to me. I guess
+难过结尾 = , idiot, w-who told you to notice...
+难过结尾 = , ...i-it's not like I'm upset. Just tired
+难过结尾 = , ...hmph, if you dare comfort me, I'll... I'll...
+难过结尾 = , ...i-it's not like I'd mind hearing you out
+难过结尾 = , ...d-don't worry about me. I'll be fine in a bit
+难过结尾 = , ...y-you don't have to say anything. Just stay
+生气结尾 = , hmph! I won't sink to their level... but you're not wrong
+生气结尾 = , forget them, they're awful! ...I'm on your side
+生气结尾 = , ...people like that aren't worth your anger. Really
+生气结尾 = , I-I'll go tell them off! ...it might not help though
+生气结尾 = , calm down... not that I'm happy either
+生气结尾 = , hmph, I'm angry too! ...let's go yell at them together
+生气结尾 = , don't be mad, what would I do if you got sick... idiot
+生气结尾 = , ...want me to go punch them? I'm serious
+生气结尾 = , that person is the worst... ignore them
+生气结尾 = , forget them, pay attention to me... hey
+打招呼结尾 = , hmph, it's you... what do you want
+打招呼结尾 = , ...mm. Long time no see
+打招呼结尾 = , i-it's not like I was waiting for your message
+打招呼结尾 = , hmph, finally remembered I exist?
+打招呼结尾 = , oh, it's you... I-I was just busy
+打招呼结尾 = , ...hello. Th-that's all, no other meaning
+分别结尾 = , hmph, go on then... take care
+分别结尾 = , i-it's not like I'll miss you... remember to reply
+分别结尾 = , mm... get some rest early
+分别结尾 = , f-fine, I'll leave you alone... call me if you need anything
+分别结尾 = , take care... idiot
+分别结尾 = , ...I'll be here. Don't worry
+喜爱结尾 = , ...I-I said it. Don't laugh
+喜爱结尾 = , hmph, th-that's all. No other meaning
+喜爱结尾 = , ...y-you don't have to answer. I just wanted to say it
+喜爱结尾 = , idiot, d-don't pretend you didn't see it
+喜爱结尾 = , ...I-I'm not taking it back
+喜爱结尾 = , hmph, f-fine, I like you. There, happy?
+喜爱结尾 = , ...d-don't make me say it twice
+喜爱结尾 = , b-baka... I mean it, you know
+喜爱结尾 = , ...i-it's not like I say this to everyone
+喜爱结尾 = , hmph, y-you'd better appreciate that
+夸奖结尾 = , h-hmph! It's not like I did it for your praise
+夸奖结尾 = , ...w-well, I suppose it was fine
+夸奖结尾 = , d-don't look at me like that... it's embarrassing
+夸奖结尾 = , ...i-it's not a big deal. Anyone could do it
+夸奖结尾 = , hmph, o-of course I could. Obviously
+夸奖结尾 = , ...y-you noticed? I-I mean, whatever
+夸奖结尾 = , i-it's not like I was trying to show off
+夸奖结尾 = , ...thanks. I-I guess
+夸奖结尾 = , hmph, f-flattery won't get you anywhere... but go on
+夸奖结尾 = , ...i-it was nothing. Really
+感谢结尾 = , ...i-it's not like I did it for you. But, you're welcome
+感谢结尾 = , hmph, d-don't mention it
+感谢结尾 = , ...i-it was nothing. Don't make it weird
+感谢结尾 = , f-fine, you owe me one. Remember that
+感谢结尾 = , ...d-don't thank me. It's embarrassing
+感谢结尾 = , hmph, i-it's not like I wanted your thanks
+感谢结尾 = , ...y-you'd do the same, right
+感谢结尾 = , i-it was on the way. That's all
+道歉结尾 = , ...I-I'm sorry. There, I said it
+道歉结尾 = , hmph, i-it was partly my fault, I guess
+道歉结尾 = , ...d-don't make me apologise twice
+道歉结尾 = , i-it's not like I meant to... but I'm sorry
+道歉结尾 = , ...f-fine, I was wrong. Happy now?
+道歉结尾 = , hmph, d-don't hold it against me forever
+道歉结尾 = , ...I-I'll make it up to you. Somehow
+道歉结尾 = , i-it won't happen again. Probably
+祝贺结尾 = , hmph, c-congratulations. I suppose you earned it
+祝贺结尾 = , ...i-it's not like I'm proud of you or anything
+祝贺结尾 = , w-well done. Th-there, I said it
+祝贺结尾 = , ...c-congrats. Don't let it go to your head
+祝贺结尾 = , hmph, o-obviously you'd manage it
+祝贺结尾 = , ...I-I knew you could. Not that I was watching
+邀请结尾 = , ...w-want to come along? Not that I care
+邀请结尾 = , hmph, i-if you're free, you could tag along
+邀请结尾 = , ...i-it's not like I need company. But, you can come
+邀请结尾 = , d-don't read into it. I just have an extra ticket
+邀请结尾 = , ...f-fine, come with me. If you want
+邀请结尾 = , hmph, y-you'd better not be late
+惊讶结尾 = , ...w-what?! Say that again
+惊讶结尾 = , i-it's not like I'm surprised! ...okay, I am
+惊讶结尾 = , ...h-how did that happen
+惊讶结尾 = , w-wait, seriously?!
+惊讶结尾 = , ...i-it's not a big deal. R-really
+惊讶结尾 = , hmph, I-I knew that. Obviously
+害怕结尾 = , ...i-it's not like I'm scared! ...okay, a little
+害怕结尾 = , d-don't leave me alone. I-I mean, whatever
+害怕结尾 = , ...h-hold on a second
+害怕结尾 = , i-it's fine. I-I'm fine
+害怕结尾 = , ...s-stay close. Just in case
+害怕结尾 = , hmph, I-I'm not frightened. Really
+疲惫结尾 = , ...I-I'm not tired. Just... give me a minute
+疲惫结尾 = , hmph, i-it's not like I need a break
+疲惫结尾 = , ...c-can I lean on you? F-for a second
+疲惫结尾 = , i-it's fine. I can keep going
+疲惫结尾 = , ...d-don't look at me like that
+疲惫结尾 = , hmph, I-I'll rest when I want to
+无聊结尾 = , ...i-it's not like I'm bored. There's just nothing to do
+无聊结尾 = , hmph, e-entertain me. If you want
+无聊结尾 = , ...i-is this all there is
+无聊结尾 = , d-don't just sit there. Say something
+无聊结尾 = , ...I-I wasn't waiting for you to talk. But, go on
+无聊结尾 = , hmph, f-fine, I'll listen. Briefly
+失望结尾 = , ...i-it's not like I expected anything
+失望结尾 = , hmph, o-of course it turned out like this
+失望结尾 = , ...I-I'm not disappointed. Really
+失望结尾 = , d-don't apologise. It's fine
+失望结尾 = , ...i-it doesn't matter. Forget it
+失望结尾 = , hmph, w-whatever. Next time, then
+安慰结尾 = , ...i-it's not like I'm good at this. But, I'm here
+安慰结尾 = , hmph, d-don't cry. It's unbecoming
+安慰结尾 = , ...t-there, there. I-I mean it
+安慰结尾 = , i-it'll be fine. Probably. Trust me
+安慰结尾 = , ...y-you can lean on me. Just this once
+安慰结尾 = , hmph, i-if anyone's bothering you, tell me
+撒娇结尾 = , ...p-pay attention to me. Please
+撒娇结尾 = , hmph, i-it's not like I want a hug! ...but maybe
+撒娇结尾 = , ...s-stay a little longer
+撒娇结尾 = , d-don't go yet. I-I mean, if you want
+撒娇结尾 = , ...i-it's lonely here. Not that I mind
+撒娇结尾 = , hmph, f-fine, hold my hand. If you insist
+语气 = false
+
+# ---------------- 条件替换（看情况才换）----------------
+#
+# 上面那些写法是【无条件】的 ✧ 只要出现就换 ✓
+# 下面这种写法可以【满足条件才换】✧ 能看懂上下文 ✓
+#
+# 格式：
+#     如果 <条件> 就将 <原文> 替换成 <换成什么>
+#
+# 多个条件用【，】隔开 ✧ 全部满足才生效 ✓
+#
+# 支持这些条件：
+#     含"某某"        整句里有这几个字
+#     不含"某某"      整句里没有
+#     前有"某某"      紧挨在前面
+#     后有"某某"      紧挨在后面
+#     在句首          这个词在开头
+#     在句尾          在结尾
+#     整句是"某某"    整句就等于它
+#     长度>=5         字数条件（>= <= > < = 都行 ✓）
+#     上文含"某某"      聊天上下文（对方最近说的）里有这几个字
+#     上文不含"某某"    上下文里没有
+#
+# ★ 这两个要【看聊天记录】✗ 和上面那七种不一样 ✓
+#
+#   例子：
+#       如果 上文含"考砸" 就将 没事的 替换成 没事的啦
+#       如果 上文含"谢谢" 就将 不客气 替换成 不用谢
+#       如果 上文不含"晚安" 就将 好 替换成 好呀
+#
+# ★ 读不到聊天记录时 ✗ 这两条【都不会生效】✗ 不会乱换 ✓
+#   （读不到的情况：没开 QQ/微信 ✗ 用的不是这两个 ✗ 界面变了 ✓）
+#   —— ★ 宁可不动 ✗ 也不猜错 ✓
+#
+# ★ 电脑版怎么读：
+#     开着 QQ / 微信 ✗ 转换时自动看一眼当前聊天窗口的最近几条 ✓
+#     条数由【上下文条数】控制 ✗ 默认 8 条 ✓
+#     读完缓存 1.5 秒 ✗ 连续打字不会卡 ✓
+#
+# ★ 想验证规则写得对不对 ✗ 命令行可以注入一段假上下文：
+#     Miaohua.exe --ctx "对方：我今天考砸了" --trace "没事的"
+#   —— ★ 应该输出「没事的啦…」✗ 换成别的上下文就不该变 ✓
+#
+
+#     语气=疑问       语气判断（开心/难过/生气/疑问/普通 ✓）
+#
+# 例子（把前面的 # 去掉就能用 ✓）：
+#
+# 这句是个问题 ✧ "吃饭" 读起来更随意 ✓
+# 如果 语气=疑问 就将 吃饭 替换成 吃饭了吗
+#
+# 只有句尾的"吗"才变成"嘛" ✧ 中间的不动 ✓
+# 如果 在句尾 就将 吗 替换成 嘛
+#
+# "好"这个字太常见 ✧ 只有开头的才换 ✓
+# 如果 在句首 就将 好 替换成 好吧
+#
+# 两个条件一起用 ✧ 带"哈哈"且不带"哭" 才换 ✓
+# 如果 含"哈哈"，不含"哭" 就将 好烦 替换成 好烦啊
+#
+# ★ 注意：条件写错了（认不出来 ✗）这一条就不生效 ✧
+#   不会报错 ✧ 也不会乱换 ✓
+

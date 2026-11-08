@@ -1,0 +1,76 @@
+# ── 构建产物（不要进仓库，发布时用 Release 附件）──
+*.exe
+*.dll
+*.pdb
+*.apk
+*.zip
+*.aab
+
+# ── 大文件：模型权重和运行时 ──
+# 那个 gguf 有 2GB，GitHub 单文件上限 100MB，绝对不能提交。
+# 想给用户的话走 Release 附件，或者让他们从 HuggingFace 自己下。
+*.gguf
+*.ggml
+*.bin
+模型/
+模型运行时/
+备用-没有独显就用这个/
+
+# ── 安卓编译产物 ──
+android/build/
+android/bin/
+android/gen/
+*.class
+*.dex
+*.idsig
+
+# ── 外部依赖（各自去下，不要塞进仓库）──
+android-sdk/
+platform-tools/
+jdk/
+.gradle/
+
+# ── 运行时会生成的东西 ──
+miaohua.log
+*.log
+rules.txt.bak
+rules.txt.坏掉的那份
+rules.txt.测试前备份
+selftest-out.txt
+trace-pc.txt
+
+# ── 编辑器 / 系统 ──
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+Thumbs.db
+desktop.ini
+# ── ★ 个人配置 / 密钥：绝不进仓库 ──
+rules.txt
+style-custom.txt
+stats.txt
+*.bak
+*.bak[0-9]*
+
+# ── 历史备份源码（约 10 MB）──
+*.bak-*.cs
+*.before-*.cs
+*.broken-*.cs
+
+# ── 旧备份目录 / 不发布的诊断包 ──
+android/assets.bak2/
+诊断包-不发布/
+
+# ── 剪辑/演示素材目录（放在仓库外）──
+视频素材/
+
+# ── 任何扩展名的历史备份 ──
+*.bak-*
+*.before-*
+*.broken-*
+
+诊断包-不发布
+*.bak*
+

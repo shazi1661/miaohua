@@ -1,0 +1,18 @@
+# 中英混写测试：一半用中文参数名，一半用英文，验证两种都能认
+# 期望结果：kaomoji=3（中英各一条 + 一条），skipends 含 喵/~，auto=false，whitelist=QQ,Weixin
+kaomoji = (=^･ω･^=)
+颜文字 = (=^‥^=)
+KAOMOJI = (*^▽^*)
+后缀 = 喵~
+template = {后缀}{颜文字}
+skipend = 喵
+跳过结尾 = ~
+eachsentence = true
+自动模式 = false
+延迟 = 500
+程序 = QQ
+whitelist = Weixin
+转换热键 = Ctrl+Shift+M
+hotkey_pause = Ctrl+Alt+Shift+P
+重载热键 = Ctrl+Alt+Shift+R
+你好 => 你好呀

@@ -1,0 +1,9 @@
+helper processes  : 1
+t=1s  box              : []  len=0
+t=1s  foreground is us : True
+t=1s  clipboard seeded with STALE-CLIPBOARD-JUNK
+t=2s  sending Ctrl+Shift+M
+t=5s  box              : []  len=0
+helper log lines added: 1
+    2026-10-01 21:47:44  hotkey: nothing was copied (box empty or nothing selected) - aborted, no paste
+==> PASS: empty box stayed empty; stale clipboard was NOT pasted back

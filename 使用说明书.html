@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>喵化助手 · 使用说明书</title>
+<style>
+  :root { --pink:#e8639b; --pink-d:#b82c62; --bg:#fff7fa; --card:#fff; --line:#f2d8e4; --text:#3a2a32; --muted:#8a7480; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+         font-family:"Microsoft YaHei UI","Microsoft YaHei",system-ui,sans-serif;
+         line-height:1.85; font-size:15px; }
+  .wrap { max-width:860px; margin:0 auto; padding:32px 24px 80px; }
+  header { text-align:center; padding:28px 0 20px; }
+  h1 { font-size:30px; margin:0 0 6px; color:var(--pink-d); letter-spacing:1px; }
+  .sub { color:var(--muted); font-size:14px; }
+  .face { font-size:22px; color:var(--pink); letter-spacing:2px; }
+  h2 { font-size:20px; margin:38px 0 12px; padding-left:12px;
+       border-left:5px solid var(--pink); color:var(--pink-d); }
+  h3 { font-size:16px; margin:22px 0 8px; color:#6b4a5a; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px;
+          padding:18px 22px; margin:14px 0; box-shadow:0 2px 10px rgba(232,99,155,.06); }
+  code { background:#fdeef4; color:var(--pink-d); padding:1px 6px; border-radius:5px;
+         font-family:Consolas,"Courier New",monospace; font-size:13.5px; }
+  pre { background:#2f2830; color:#f6e9f0; padding:14px 16px; border-radius:10px;
+        overflow-x:auto; font-family:Consolas,"Courier New",monospace; font-size:13.5px;
+        line-height:1.7; }
+  pre .c { color:#a08a98; }
+  table { border-collapse:collapse; width:100%; margin:12px 0; font-size:14px; }
+  th,td { border:1px solid var(--line); padding:8px 11px; text-align:left; }
+  th { background:#fdeef4; color:var(--pink-d); font-weight:600; }
+  tr:nth-child(even) td { background:#fffafc; }
+  .tip { background:#f0f8ff; border-left:4px solid #7ab6e8; padding:12px 16px;
+         border-radius:0 10px 10px 0; margin:14px 0; }
+  .warn { background:#fff6ec; border-left:4px solid #e8a765; padding:12px 16px;
+          border-radius:0 10px 10px 0; margin:14px 0; }
+  ol,ul { padding-left:24px; }
+  li { margin:5px 0; }
+  .step { counter-reset:s; list-style:none; padding-left:0; }
+  .step li { counter-increment:s; position:relative; padding-left:44px; margin:14px 0; }
+  .step li::before { content:counter(s); position:absolute; left:0; top:1px;
+      width:30px; height:30px; border-radius:50%; background:var(--pink); color:#fff;
+      display:flex; align-items:center; justify-content:center; font-weight:700; }
+  hr { border:0; border-top:1px dashed var(--line); margin:34px 0; }
+  .kbd { display:inline-block; background:#fff; border:1px solid #d8c2cc;
+         border-bottom-width:2px; border-radius:6px; padding:1px 8px; font-size:13px;
+         font-family:Consolas,monospace; color:#5a4450; }
+  footer { text-align:center; color:var(--muted); font-size:13px; margin-top:50px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="face">(=^･ω･^=)</div>
+  <h1>喵化助手</h1>
+  <div class="sub">打完字按一下，整段变成喵喵的</div>
+  <div class="sub" style="margin-top:6px;font-size:13px">
+    电脑版 <b>2.15.0</b>　·　安卓版 <b>3.4.5</b>
+  </div>
+</header>
+
+<div class="card">
+  <b>一句话说明</b>：这是个电脑 + 手机的小工具。你在 QQ 里打完一句话，按一下快捷键，
+  它会替你改词、加颜文字、加一句符合语气的尾句。<br>
+  <span style="color:var(--muted)">比如「<code>好的</code>」→「<code>好哒喵！(=^･ω･^=)</code>」</span>
+</div>
+
+<div class="warn">
+  <b>★★★ 装之前，先看这三件事 ★★★</b>
+  <ol>
+    <li><b>这个软件【完全免费】。</b>没有广告、没有会员、没有内购。
+        如果你是花钱买的，说明你被骗了，请立刻找商家退款。</li>
+    <li><b>微信需要额外开一个「读屏服务」才能用。</b>
+        不开的话，微信里不会生效 ——
+        <b>这不是软件的 bug，是微信的限制</b>：它只让系统官方的读屏应用读取聊天输入框。
+        步骤在「六、手机版」里，两分钟就能弄好。</li>
+    <li><b>游戏里用不了。</b>游戏画面是游戏引擎自己画出来的，系统里根本没有「输入框」
+        这个东西，任何无障碍类软件都读不到。MT 管理器这类自绘界面的编辑器同理。</li>
+  </ol>
+</div>
+<div class="warn">
+  <b>★★★ 聊天框里有图片时，先别按转换 ★★★</b><br>
+  QQ 和微信的输入框<b>没办法把图片放进剪贴板</b> —— 复制不行，剪切也不行。
+  而这个程序的原理是「全选 → 复制 → 改 → 粘回去」，所以
+  <b>框里只要有图片，一次转换就会把图片弄没</b>。<br>
+  这是对方的限制，程序这边绕不过去（试过用剪切先探测，结果那一步就把图片弄丢了）。
+  <b>要转换就先把图片去掉，或者等图片发出去之后再改文字。</b>
+</div>
+<h2>一、三分钟开始用</h2>
+
+<ol class="step">
+  <li><b>打开程序</b><br>
+      双击 <code>电脑版\Miaohua.exe</code>。会弹出主窗口，右下角托盘也有个猫脸图标。</li>
+  <li><b>确认「生效程序」是 QQ</b><br>
+      打开「设置」页，看「生效程序」是不是 <code>QQ</code>。是的话就不用动——
+      意思是只有 QQ 里才会自动转换，别的软件不受影响。</li>
+  <li><b>去 QQ 里打字，按快捷键</b><br>
+      打完一句话，按 <span class="kbd">Ctrl</span> + <span class="kbd">Shift</span> + <span class="kbd">M</span>，
+      整段就变了。</li>
+</ol>
+
+<div class="tip">
+  <b>也可以不用按键。</b>「设置」里打开「停止打字后自动转换」，你停手约 1 秒它就自己变。
+  第一次用建议先不打开，等你确认效果符合预期再说。
+</div>
+
+<h2>二、三个快捷键</h2>
+
+<table>
+  <tr><th>按键</th><th>作用</th></tr>
+  <tr><td><span class="kbd">Ctrl+Shift+M</span></td><td>立刻转换当前这句话</td></tr>
+  <tr><td><span class="kbd">Ctrl+Alt+Shift+P</span></td><td>暂停 / 恢复（暂停后所有转换都不生效）</td></tr>
+  <tr><td><span class="kbd">Ctrl+Alt+Shift+R</span></td><td>重新读取规则文件</td></tr>
+</table>
+
+<div class="warn">
+  改了快捷键要<b>重开程序</b>才生效——Windows 的全局热键只能在启动时注册。
+</div>
+
+<h2>三、让它说你自己想说的话</h2>
+
+<p>所有内容都在 <code>电脑版\rules.txt</code> 里，是个纯文本文件，用记事本就能改。
+程序里有「查看规则」按钮直接打开它。</p>
+
+<h3>1. 改词（一句话换一个词）</h3>
+<p>格式是 <code>原文 =&gt; 替换成</code>，一行一条：</p>
+<pre>谢谢你 =&gt; 谢谢你喵
+哈哈 =&gt; 哈哈哈
+好的 =&gt; 好哒
+<span class="c"># 井号开头是注释，不会被读取</span></pre>
+
+<h3>2. 加颜文字和尾句</h3>
+<p><b>同名的行写几行，就有几个候选</b>，每次随机挑一个，而且不会连着两句用同一个：</p>
+<pre>后缀 = 喵！
+颜文字 = (=^･ω･^=)
+颜文字 = (≧▽≦)
+开头 = 哼，
+开头 = 才、才不是……
+结尾 = ，才不是为了你才说的呢……真的不是哦
+结尾 = ，哼，别、别误会啊……我只是顺便提一下</pre>
+
+<div class="tip">
+  <b>「结尾」是最常命中的一类</b>（普通句子都走它）。觉得翻来覆去就那几句，
+  多写几行「结尾」最有效。
+</div>
+
+<h3>3. 按语气分成不同回法</h3>
+<p>程序会先判断你这句话属于哪一类，再从对应的词库挑一句。一共 <b>21 类</b>：</p>
+
+<table>
+  <tr><th>类别</th><th>你打的字</th><th>键名</th></tr>
+  <tr><td>打招呼</td><td>你好、早上好、在吗</td><td><code>打招呼结尾</code></td></tr>
+  <tr><td>分别</td><td>再见、晚安、我先睡了</td><td><code>分别结尾</code></td></tr>
+  <tr><td>喜爱</td><td>我喜欢你、想你了</td><td><code>喜爱结尾</code></td></tr>
+  <tr><td>撒娇</td><td>抱抱我、亲亲我</td><td><code>撒娇结尾</code></td></tr>
+  <tr><td>夸奖</td><td>你好棒、你好厉害</td><td><code>夸奖结尾</code></td></tr>
+  <tr><td>感谢</td><td>谢谢、辛苦啦</td><td><code>感谢结尾</code></td></tr>
+  <tr><td>道歉</td><td>对不起、不好意思</td><td><code>道歉结尾</code></td></tr>
+  <tr><td>祝贺</td><td>恭喜、生日快乐</td><td><code>祝贺结尾</code></td></tr>
+  <tr><td>邀请</td><td>一起吃饭、陪我</td><td><code>邀请结尾</code></td></tr>
+  <tr><td>惊讶</td><td>哇、天呐、真的假的</td><td><code>惊讶结尾</code></td></tr>
+  <tr><td>害怕</td><td>我好怕、有点担心</td><td><code>害怕结尾</code></td></tr>
+  <tr><td>疲惫</td><td>好累啊、我好困</td><td><code>疲惫结尾</code></td></tr>
+  <tr><td>无聊</td><td>好无聊啊</td><td><code>无聊结尾</code></td></tr>
+  <tr><td>失望</td><td>好失望、白期待了</td><td><code>失望结尾</code></td></tr>
+  <tr><td>安慰</td><td>别难过了、抱抱你</td><td><code>安慰结尾</code></td></tr>
+  <tr><td>难过</td><td>不开心、我好难过、想哭</td><td><code>难过结尾</code></td></tr>
+  <tr><td>生气</td><td>烦死了真讨厌</td><td><code>生气结尾</code></td></tr>
+  <tr><td>开心</td><td>今天好开心哈哈</td><td><code>开心结尾</code></td></tr>
+  <tr><td>疑问</td><td>你吃饭了吗、你觉得呢</td><td><code>问句结尾</code></td></tr>
+  <tr><td>感叹</td><td>太好了！！！</td><td><code>叹句结尾</code></td></tr>
+  <tr><td>普通</td><td>其余（最常命中）</td><td><code>结尾</code></td></tr>
+</table>
+
+<div class="tip">
+  <b>注意「难过」和「安慰」是分开的。</b>加的话都是<b>你</b>说的，所以：<br>
+  · 你打 <code>不开心</code>（你自己难过）→ 走「难过」，加的是<b>你自己的口吻</b><br>
+  · 你打 <code>别难过了</code>（对方难过）→ 走「安慰」，加的才是安慰对方的话
+</div>
+
+<h2>四、两套风格</h2>
+
+<table>
+  <tr><th></th><th>外观风格</th><th>语气风格</th></tr>
+  <tr><td>管什么</td><td>颜文字、后缀（<code>喵！</code> / <code>喵~</code>）</td><td>开头、各类结尾</td></tr>
+  <tr><td>可选</td><td>萌系 / 元气 / 慵懒 / 撒娇 / 冷淡 / 颜文字在前</td><td>傲娇 / 黏人 / 慵懒 / 委屈 / 元气 / <b>应激</b></td></tr>
+</table>
+
+<h3>「应激」是干什么的</h3>
+
+<p>猫受惊或者压力大的时候会<b>炸毛哈气</b>——耳朵往后贴成「飞机耳」、身子压低、
+对着靠近的人嘶声警告。这个风格就是那个状态。</p>
+
+<table>
+  <tr><th>风格</th><th>你打「你好」</th></tr>
+  <tr><td>傲娇</td><td>哼，我说啊，你好喵！(￣^￣)，……嗯，好久不见</td></tr>
+  <tr><td><b>应激</b></td><td><b>（炸毛）你好嘶——(=｀Д´=)，哈——先退后再说</b></td></tr>
+</table>
+
+<div class="warn">
+  <b>这是唯一一个猫不是在对你卖萌的风格。</b>台词全是防御、威吓、划清界限——
+  不是你平时看到的那种撒娇猫。<br>
+  后缀是「嘶——」不是「哈——」，因为中文里「哈——」读起来像在笑。
+</div>
+
+<div class="tip">
+  <b>两类是二选一：点外观风格会关掉语气，点语气风格会换成它的句尾装饰。你的词库不会被删。</b>比如「萌系颜文字 + 傲娇语气」。
+  点外观风格<b>不会</b>动你的语气词库。
+</div>
+
+<p>还有个「程度」：</p>
+<ul>
+  <li><b>轻度</b>——整段只在最后加一次</li>
+  <li><b>普通</b>——每句话都加</li>
+  <li><b>重度</b>——连逗号处也加（最热闹）</li>
+</ul>
+
+<h2>四之二、不想被改内容？用「只加末尾」</h2>
+
+<p>语气风格会<b>在句首句尾加话</b>，等于改了你说的内容。有正事要谈、
+或者只想要个可爱的句尾，就点「<b>只加末尾</b>」那个按钮（在语气风格那一排的最后）。</p>
+
+<table>
+  <tr><th>模式</th><th>你打「你好」</th></tr>
+  <tr><td>傲娇（语气改写）</td><td>哼，我说啊，你好喵！(￣^￣)，……嗯，好久不见</td></tr>
+  <tr><td><b>只加末尾</b></td><td><b>你好喵！(=^･ω･^=)</b></td></tr>
+</table>
+
+<p>「只加末尾」做的事：</p>
+<ul>
+  <li><b>照旧</b>执行词替换（<code>再见 =&gt; 拜拜</code> 之类）</li>
+  <li><b>照旧</b>在末尾加后缀 + 颜文字</li>
+  <li><b>不</b>在句首句尾加任何话</li>
+  <li>程度自动设为「轻度」（只在整段末尾加一次）</li>
+</ul>
+
+<div class="tip">
+  <b>它不动你的语气词库。</b>点「只加末尾」只是把语气<b>关掉</b>，
+  你写的那些「结尾 / 开心结尾 / 安慰结尾」一行都不会丢——
+  哪天想用回来，点一下「傲娇」就全回来了。
+</div>
+
+<div class="warn">
+  <b>命令行也能切：</b><br>
+  <code>Miaohua.exe --style 只加末尾</code>　切到纯净模式<br>
+  <code>Miaohua.exe --style 傲娇</code>　　　切回语气改写<br>
+  <code>Miaohua.exe --styles</code>　　　　 看全部可选名字
+</div>
+
+<h2>四之三、中英文切换（2.15 新增）</h2>
+
+<p>界面有<b>中文和英文两套</b>。左下角那个按钮点一下就能换，中文 ⇄ English 随时切。</p>
+
+<div class="card">
+  <b>换的不只是界面文字，是整套：</b>
+  <ul>
+    <li><b>界面</b> —— 几百处文字全部跟着走</li>
+    <li><b>规则</b> —— 自动换成英文那份（<code>rules-en.txt</code>），
+        词库、后缀、颜文字整套都换</li>
+    <li><b>外观风格</b> —— Cute / Cheerful / Sleepy / Clingy / Cold / Kaomoji</li>
+    <li><b>语气风格</b> —— Tsundere（傲娇）/ Needy（黏人）/ Sleepy（慵懒）/
+        Sad（委屈）/ Cheerful（元气）/ Startled（应激）</li>
+    <li><b>颜文字</b> —— 换成英文圈常见的那些</li>
+  </ul>
+</div>
+
+<h3>颜文字为什么换了一套</h3>
+
+<p>原来那套里有不少字符在英文用户看来是「乱码」：</p>
+
+<table>
+  <tr><th>原来的</th><th>问题</th></tr>
+  <tr><td><code>(๑•̀ㅂ•́)و✧</code></td><td>里面是<b>韩文</b></td></tr>
+  <tr><td><code>ฅ^•ﻌ•^ฅ</code></td><td>里面是<b>泰文和阿拉伯文</b></td></tr>
+  <tr><td><code>(￣o￣)</code>　<code>(˘ω˘)</code>　<code>(・_・)</code></td><td>日文假名，英文用户不熟</td></tr>
+</table>
+
+<p>所以英文版用的是 <code>(=^･ω･^=)</code>　<code>(≧▽≦)</code>　<code>♡(&gt;ω&lt;♡)</code>　
+<code>:3</code>　<code>&gt;w&lt;</code>　<code>uwu</code>　<code>:D</code>　<code>;w;</code>　
+<code>TwT</code>　<code>D:</code>　<code>(-.-)Zzz</code>　<code>＼(^o^)／</code>　
+<code>(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</code> —— 都是英文聊天里真的会用的。</p>
+
+<div class="tip">
+  <b>英文模式下每个单词之间会自动加一个空格。</b><br>
+  中文是「汉字后面跟喵」很自然，英文不加空格会连成一个词：<br>
+  <code>hello</code> + <code>meow~</code> → <code>hellomeow~</code> ✗　
+  <code>hello meow~</code> ✓
+</div>
+
+<h2>五、智能语气（这个包已经自带模型）</h2>
+
+<p>关键字判断有个死穴：<code>我不难过</code> 里有「难过」两个字，它只看得见这两个字。
+<b>本机的小模型能读懂否定句。</b></p>
+
+<table>
+  <tr><th>你打的</th><th>关键字判断</th><th>模型判断</th></tr>
+  <tr><td>我不难过</td><td>难过 ✗</td><td><b>普通 ✓</b></td></tr>
+  <tr><td>呜呜呜手机摔了</td><td>普通 ✗</td><td><b>难过 ✓</b></td></tr>
+  <tr><td>别理我</td><td>普通 ✗</td><td><b>疑问 ✓</b></td></tr>
+</table>
+
+<h3>这个包为什么不用装别的东西</h3>
+<p>模型文件（约 2 GB）和推理程序都放在 <code>电脑版\模型\</code> 文件夹里了。
+你打开程序时，它会<b>自己把模型服务拉起来</b>，十几秒后就能用，不用你开命令行。</p>
+
+<div class="tip">
+  启动信息会写进日志（程序里点「查看日志」），找这几行：<br>
+  <code>model: starting bundled llama-server ...</code><br>
+  <code>model: ready at http://127.0.0.1:1234</code><br>
+  <code>model: warmed up (happy)</code>
+</div>
+
+<div class="warn">
+  <b>你自己的隐私</b>：模型跑在你自己电脑上，地址是 <code>127.0.0.1</code>（本机回环），
+  <b>不联网、不出这台机器</b>。模型只负责判断情绪（回一个词），
+  加进你句子里的话始终来自 <code>rules.txt</code>，模型没有能力往你的聊天内容里写字。
+</div>
+
+<h3>不想要模型也行</h3>
+<p>「设置」里把「开启智能语气」关掉，就完全离线走关键字判断，
+程序不会再发出任何网络请求。两类判断都不影响改词和颜文字。</p>
+
+<h2>六、手机版</h2>
+
+<h3>怎么装</h3>
+
+<ol class="step">
+  <li><b>把 APK 传到手机</b><br>
+      微信传、数据线传都行。点开它安装，系统可能提示「未知来源」，允许即可。</li>
+  <li><b>打开应用，按提示开无障碍</b><br>
+      路径大致是 <code>设置 → 无障碍 → 已下载的服务 → 喵化助手 → 打开</code>。<br>
+      不同手机菜单名略有差别：小米在「更多设置」里，华为在「辅助功能」里，
+      OPPO / vivo 在「系统设置」里。<br>
+      <b>无障碍必须由你手动打开</b> —— 这是安卓的规定，任何软件都不能自己给自己开。</li>
+  <li><b>把「生效应用」白名单填上</b><br>
+      在「设置」页填包名，一行一个：<br>
+      <code>com.tencent.mobileqq</code>　QQ<br>
+      <code>com.tencent.mm</code>　微信<br>
+      <b>★ 白名单空着的话，任何输入框都会被喵化</b> —— 包括改文件名、填表单、
+      写搜索框，会很烦也可能误事。建议只填你真正想用的那几个。</li>
+  <li><b>去聊天软件里打字</b><br>
+      打完停一下，它自己就改了（默认停 400 毫秒，可以在设置里调）。</li>
+</ol>
+
+<div class="tip">
+  <b>装完发现不生效？</b>把应用从后台划掉重新打开，
+  再把无障碍「关掉 → 等两秒 → 重新打开」。很多问题这样就解决了 ——
+  安卓装完新版本后，正在运行的进程还是旧代码。
+</div>
+
+<h3>★ 微信怎么用（重要）</h3>
+
+<p>微信能用，但要<b>同时打开一个「读屏服务」</b>。</p>
+
+<p><b>为什么：</b>微信内部有一份「可信读屏」的名单，只有名单里的服务
+（比如系统自带的 TalkBack）才能读取聊天输入框。第三方应用不管申请什么权限、
+系统批不批，都不在名单里。这一点我们反复验证过，也拆开微信的安装包确认过 ——
+它的代码里直接写着 TalkBack 的包名。所以这不是软件做得不够好，是微信的产品限制。</p>
+
+<ol class="step">
+  <li>确认喵化助手已经开好无障碍</li>
+  <li>打开读屏服务：<code>设置 → 无障碍 → TalkBack → 打开</code><br>
+      有些手机自带别的读屏（比如「屏幕朗读」），效果一样，开哪个都行。</li>
+  <li>回到微信正常打字，停一下就会喵化</li>
+  <li>不用了就把读屏服务关掉</li>
+</ol>
+
+<div class="warn">
+  <b>★ 开了读屏之后，手机操作方式会变</b> —— 这一点必须提前知道，不然会以为手机坏了：
+  <ul>
+    <li><b>单击</b> = 选中（只会念一下，不会点下去）</li>
+    <li><b>双击</b> = 真正点击</li>
+    <li><b>滑动</b> = 要用<b>两根手指</b></li>
+  </ul>
+  也就是说：想点某个东西，先单击它，再双击屏幕任意位置。
+  如果开着读屏觉得吵，可以在 TalkBack 设置里把语音关掉或调小 ——
+  它只要「启用着」就行，不一定非得念出来。
+</div>
+
+<div class="tip">
+  <b>怎么确认读屏开没开？</b>喵化助手「设置」页里有一个
+  <b>「检查微信支持」</b>按钮，点一下它会告诉你当前状态，
+  没开的话直接带你去无障碍设置。
+</div>
+
+<h3>哪些地方能用，哪些不能用</h3>
+
+<table>
+  <tr><th>场景</th><th>能不能</th><th>说明</th></tr>
+  <tr><td>QQ</td><td>✅</td><td>直接用</td></tr>
+  <tr><td>浏览器（地址栏、网页输入框）</td><td>✅</td><td>直接用</td></tr>
+  <tr><td>记事本、备忘录、短信</td><td>✅</td><td>直接用</td></tr>
+  <tr><td>系统设置、应用商店</td><td>✅</td><td>直接用</td></tr>
+  <tr><td><b>微信</b></td><td><b>△</b></td><td>要同时开一个读屏服务</td></tr>
+  <tr><td>游戏</td><td>❌</td><td>画面是引擎自绘的，系统里没有输入框</td></tr>
+  <tr><td>MT 管理器这类自绘编辑器</td><td>❌</td><td>同上</td></tr>
+</table>
+
+<p><b>判断方法：</b>如果那个输入框长按能弹出「粘贴」菜单，一般就能用；
+如果是游戏或自绘界面，长按没有任何反应，那就用不了。</p>
+
+<h3>手机版的界面</h3>
+
+<p>底部有五个分页，和电脑版左边那排是一个意思：</p>
+
+<table>
+  <tr><th>分页</th><th>做什么</th></tr>
+  <tr><td><b>试一下</b></td><td>看无障碍服务开没开，随便打几个字立刻看效果，下面有行为日志</td></tr>
+  <tr><td><b>风格</b></td><td>外观风格（6 个）和语气风格（7 个），两排互不影响</td></tr>
+  <tr><td><b>规则</b></td><td>编辑规则，保存 / 恢复默认</td></tr>
+  <tr><td><b>设置</b></td><td>自动转换开关、停手多久、生效应用、常驻运行、检查微信支持</td></tr>
+  <tr><td><b>我的</b></td><td>版本、它能做什么、它不做什么</td></tr>
+</table>
+
+<h3>手机版权限说明</h3>
+
+<p>这个 APK 一共只申请 <b>4 个权限</b>：</p>
+<table>
+  <tr><th>权限</th><th>用途</th><th>会不会弹框</th></tr>
+  <tr><td>FOREGROUND_SERVICE</td><td>常驻运行（挂一条通知，别被系统清掉）</td><td>不会</td></tr>
+  <tr><td>FOREGROUND_SERVICE_SPECIAL_USE</td><td>上面那条的用途说明（Android 14 要求）</td><td>不会</td></tr>
+  <tr><td>RECEIVE_BOOT_COMPLETED</td><td>开机自启（只在开关打开时，默认关着）</td><td>不会</td></tr>
+  <tr><td>POST_NOTIFICATIONS</td><td>显示那条常驻通知</td><td><b>会，可以拒绝</b></td></tr>
+</table>
+
+<div class="tip">
+  <b>没有的权限比有的更重要：</b>这个包<b>没有 INTERNET 权限</b> ——
+  也就是说它<b>物理上无法联网</b>。就算代码里写了要发数据，系统也不会给它网络。
+  不是「承诺不联网」，是「根本连不了」。<br>
+  也没有存储 / 相机 / 麦克风 / 通讯录 / 短信 / 位置 / 悬浮窗。<br><br>
+  <b>无障碍不算普通权限</b> —— 它不在上面那个列表里，必须由你亲自在系统设置里打开，
+  随时也能关掉。它能做的事被限定得很死：只监听文本变化、焦点、窗口变化等事件，
+  不截获你的按键。
+</div>
+
+<div class="tip">
+  <b>手机关掉网络也能用。</b>手机版没有「智能语气」（模型太大，而且那需要联网权限）。
+</div>
+<h2>七、常见问题</h2>
+
+<h3>按了没反应？</h3>
+<ul>
+  <li>看右下角托盘图标是不是灰的——灰的代表<b>已暂停</b>，按 <span class="kbd">Ctrl+Alt+Shift+P</span> 恢复</li>
+  <li>确认当前窗口程序名在「生效程序」列表里（默认只有 QQ）</li>
+  <li>确认输入框里<b>有文字</b>——空的时候它什么也不做</li>
+  <li>看日志（「查看日志」按钮），每一步都有记录</li>
+</ul>
+
+<h3>同一句话按两次，会不会越变越长？</h3>
+<p>不会。程序认得出自己加过的内容，第二次按结果和第一次一模一样（这叫幂等，
+开发时专门测过，几十个用例全部通过）。</p>
+
+<h3>@ 别人的时候会怎样？</h3>
+<p>QQ 的 @ 是特殊元素，普通复制粘贴会把它拍平成普通文字、@ 就失效了。
+所以当输入框<b>以 @ 开头</b>时，程序会跳过 @ 那一段，只改写后面的内容，@ 原样保留。</p>
+
+<h3>改坏了 rules.txt 怎么办？</h3>
+<p>程序每次写入前都会把上一版存成 <code>rules.txt.bak</code>，直接改名回去就行。
+如果某次改动会让内容大幅减少，程序会<b>拦下来不写</b>并弹窗告诉你。</p>
+
+<h3>想换回默认风格？</h3>
+<p>命令行里跑 <code>Miaohua.exe --style 傲娇</code> 就能套用风格，不用点界面。
+跑 <code>Miaohua.exe --styles</code> 看全部可选名字。</p>
+
+<h2>七之二、更新公告</h2>
+
+<p>想知道每个版本改了什么，两个地方都能看：</p>
+
+<table>
+  <tr><th></th><th>在哪看</th></tr>
+  <tr><td>电脑版</td><td>左边导航最后一项「更新公告」（「关于」旁边）</td></tr>
+  <tr><td>安卓版</td><td>「关于」分页里往下翻</td></tr>
+</table>
+
+<div class="tip">
+  <b>两边看的是同一个文件</b>：<code>更新记录.txt</code>。<br>
+  电脑版是<b>当场读</b>程序旁边那份——你改它、或者以后换了新版本，
+  界面跟着变，不用重新打包。<br>
+  安卓版是打包时塞进 APK 的（app 没有联网权限，不可能联网拿），
+  每次构建自动同步，不会出现两份内容不一样。
+</div>
+
+<h2>八、它不做什么</h2>
+<div class="card">
+  <ul style="margin:0">
+    <li><b>不改</b>网址、邮箱、文件路径，以及 <code>#121417</code> 这种给程序读的编号
+        <span style="color:var(--muted)">（2.15.0 起：单独发一个 <code>123</code> 或一串标点也算内容，照样会转换）</span></li>
+    <li><b>不碰</b>代码里的东西，也不碰你没列进「生效程序」的应用</li>
+    <li><b>不联网</b>——除非你自己打开「智能语气」，那也只连本机 <code>127.0.0.1</code></li>
+    <li><b>不上传、不保存</b>你输入的内容（只在你自己输入框里原地改写）</li>
+    <li><b>不替你点发送</b>——改完还是你自己按回车</li>
+  </ul>
+</div>
+
+<hr>
+
+<footer>
+  喵化助手 · 电脑版 2.15.2 / 安卓版 v3.4.5 · 2026-10-06 · 本地运行的小工具<br>
+  <span style="color:var(--muted);font-size:12px">
+    两边版本号各自独立，改动不同步。改了什么都记在 <code>更新记录.txt</code> 里
+  </span><br>
+  <span style="color:var(--pink)">(=^･ω･^=)</span> 喵～
+</footer>
+
+</div>
+</body>
+</html>
