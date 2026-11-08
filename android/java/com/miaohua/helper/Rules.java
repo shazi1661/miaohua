@@ -141,18 +141,8 @@ public class Rules {
     /** ★ 2026-10-31：球旁边显示转换结果 ✓ */
     public boolean resultTail = true;
 
-    /** ★ 2026-11-01：当前风格名 ✗ 给大模型写开头结尾当参考 ✓ */
-    public String styleName = "";
 
-    /** ★ 2026-11-01：上一次判出的情绪 ✗ 大模型写包装时要用 ✓ */
-    public static String lastMood = "";
 
-    /** ★ 2026-10-31：大模型改写 ✗ off / manual / auto / wrap ✓ */
-    public String rewriteMode = "off";
-    public String rewriteEndpoint = "";
-    public String rewriteModel = "";
-    public String rewriteKey = "";
-    public int rewriteTimeoutMs = 5000;
     // 重度: break after commas too
     public boolean commaDecorate = false;
 
@@ -333,14 +323,6 @@ public class Rules {
             continue;
         }
             if (key.equals("skipend")) { r.skipEnds.add(val); continue; }
-        if (key.equals("rewritemode")) { r.rewriteMode = val.trim().toLowerCase(); continue; }
-        if (key.equals("rewriteendpoint")) { r.rewriteEndpoint = val.trim(); continue; }
-        if (key.equals("rewritemodel")) { r.rewriteModel = val.trim(); continue; }
-        if (key.equals("rewritekey")) { r.rewriteKey = val.trim(); continue; }
-        if (key.equals("rewritetimeout")) {
-            try { int v = Integer.parseInt(val.trim()); if (v >= 300) r.rewriteTimeoutMs = v; } catch (Exception e) { }
-            continue;
-        }
         if (key.equals("floatmode") || key.equals("\u60AC\u6D6E\u7A97\u6A21\u5F0F")) {
             r.floatMode = val.trim().equals("always") ? "always" : "qq";
             continue;
@@ -435,11 +417,6 @@ public class Rules {
             return "suffix";
         if (k.equals("template") || k.equals("\u6A21\u677F"))
             return "template";
-        if (k.equals("rewritemode") || k.equals("\u6539\u5199\u6A21\u5F0F")) return "rewritemode";
-        if (k.equals("rewriteendpoint") || k.equals("\u6539\u5199\u5730\u5740")) return "rewriteendpoint";
-        if (k.equals("rewritemodel") || k.equals("\u6539\u5199\u6A21\u578B")) return "rewritemodel";
-        if (k.equals("rewritekey") || k.equals("\u6539\u5199\u5BC6\u94A5")) return "rewritekey";
-        if (k.equals("rewritetimeout") || k.equals("\u6539\u5199\u8D85\u65F6")) return "rewritetimeout";
         if (k.equals("floatmode") || k.equals("\u60AC\u6D6E\u7A97\u6A21\u5F0F") || k.equals("\u663E\u793A\u65F6\u673A"))
             return "floatmode";
         if (k.equals("tail") || k.equals("\u7ED3\u679C\u5C3E\u5DF4") || k.equals("\u5C0F\u5C3E\u5DF4"))
@@ -2199,7 +2176,6 @@ public class Rules {
 
     String pickCloserFor(String plain) {
         String m = mood(plain);
-        lastMood = m;   // ★ 给大模型用 ✓
 
         // ★★★ 关键词判不出来时 ✧ 问一下小模型 ★★★
         //

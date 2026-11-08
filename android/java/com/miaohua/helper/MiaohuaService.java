@@ -172,122 +172,7 @@ public class MiaohuaService extends AccessibilityService {
      *   模式 qq（默认）：只在「生效应用」里出现 ✗ 其他地方一律收起
      *   模式 always：一直显示 ✗ 切走不收
      */
-    /** ★ 2026-10-31：把改写丢到后台线程 ✗ 主线程不能等网络 ✓ */
-    void startRewrite(String src, String ruleOut, boolean writeBack) {
-        try {
-            Rules r = rules;
-            if (r == null || "off".equals(r.rewriteMode)) return;
-            new Thread(new RewriteJob(this, r, src, ruleOut, writeBack)).start();
-        } catch (Throwable t) {
-            Trace.add(Trace.now() + "  启动改写线程失败：" + t);
-        }
-    }
-
-    /** ★ 2026-11-01：从池子抽 3 条当样例 ✓ */
-    static String sample3(java.util.List<String> pool) {
-        if (pool == null || pool.isEmpty()) return "";
-        StringBuilder sb = new StringBuilder();
-        int take = Math.min(3, pool.size());
-        for (int i = 0; i < take; i++) {
-            if (i > 0) sb.append(" / ");
-            sb.append(pool.get(i));
-        }
-        return sb.toString();
-    }
-
-    static class RewriteJob implements Runnable {
-        final MiaohuaService svc;
-        final Rules r;
-        final String src, ruleOut;
-        final boolean writeBack;
-        RewriteJob(MiaohuaService s, Rules rr, String a, String b, boolean w) {
-            svc = s; r = rr; src = a; ruleOut = b; writeBack = w;
-        }
-        public void run() {
-            String res = null;
-            try {
-                if ("wrap".equals(r.rewriteMode)) {
-                    String w = RewriteApi.wrap(r, src, ruleOut,
-                            sample3(r.openers), sample3(r.closers), r.styleName);
-                    if (w != null) {
-                        String[] q = w.split("\u0001", -1);
-                        if (q.length >= 4) {
-                            String op = q[0], suf = q[1], kao = q[2], cl = q[3];
-                            StringBuilder sb = new StringBuilder();
-                            if (op.length() > 0) sb.append(op);
-                            sb.append(src);
-                            if (suf.length() > 0) sb.append(suf);
-                            if (kao.length() > 0) sb.append(kao);
-                            if (cl.length() > 0) {
-                                char last = sb.length() > 0 ? sb.charAt(sb.length() - 1) : ' ';
-                                if ("\u3002\uFF01\uFF1F\u2026\uFF5E\uFF0C\u3001".indexOf(last) < 0) sb.append('\uFF0C');
-                                sb.append(cl);
-                            }
-                            res = sb.toString();
-                        }
-                    }
-                } else {
-                    res = RewriteApi.rewrite(r, src, ruleOut);
-                }
-            } catch (Throwable t) {
-                RewriteApi.lastError = String.valueOf(t);
-            }
-            if (res == null) {
-                Trace.add(Trace.now() + "  大模型没回应（" + RewriteApi.lastError + "），用规则结果");
-                return;
-            }
-            try { svc.handler.post(new RewriteDone(svc, src, res, writeBack)); } catch (Throwable t) { }
-        }
-    }
-
-    static class RewriteDone implements Runnable {
-        final MiaohuaService svc;
-        final String src, res;
-        final boolean writeBack;
-        RewriteDone(MiaohuaService s, String a, String b, boolean w) { svc = s; src = a; res = b; writeBack = w; }
-        public void run() {
-            try {
-                if (writeBack) svc.applyRewriteToInput(src, res);
-                else svc.applyRewriteToPreview(src, res);
-            } catch (Throwable t) {
-                Trace.add(Trace.now() + "  改写回写失败：" + t);
-            }
-        }
-    }
-
-    /** ★ 替换预览 ✗ 要确认原文没变 ✓ */
-    void applyRewriteToPreview(String src, String res) {
-        if (src == null || !src.equals(floatOrig)) return;   // 用户又改了 ✗ 丢弃
-        floatOut = res;
-        if (fbar != null) {
-            fbar.tailEnabled = rules != null && rules.resultTail;
-            if (fbar.tailEnabled) fbar.setTail(res);
-            else fbar.hideTail();
-            if (fbar.isExpanded()) fbar.setPreview(floatOrig, floatOut);
-        }
-        Trace.add(Trace.now() + "  大模型改写 -> [" + Trace.brief(res) + "]");
-    }
-
-    /** ★ 直接写回输入框（auto 模式）✓ */
-    void applyRewriteToInput(String src, String res) {
-        if (src == null || !src.equals(floatOrig)) return;
-        android.view.accessibility.AccessibilityNodeInfo node = findInputNode();
-        if (node == null) return;
-        android.os.Bundle b = new android.os.Bundle();
-        b.putCharSequence(android.view.accessibility.AccessibilityNodeInfo.ACTION_ARGUMENT_SET_TEXT_CHARSEQUENCE, res);
-        b.putInt(android.view.accessibility.AccessibilityNodeInfo.ACTION_ARGUMENT_SELECTION_START_INT, res.length());
-        b.putInt(android.view.accessibility.AccessibilityNodeInfo.ACTION_ARGUMENT_SELECTION_END_INT, res.length());
-        if (node.performAction(android.view.accessibility.AccessibilityNodeInfo.ACTION_SET_TEXT, b)) {
-            settleUntil = System.currentTimeMillis() + 600;
-            lastWritten = res;
-            floatOut = res;
-            floatSuppressed = true;
-            if (fbar != null) fbar.hideAll();
-            Trace.add(Trace.now() + "  大模型已写回 -> [" + Trace.brief(res) + "]");
-        }
-    }
-
-    void updateBallForForeground(String pkg) {
+        void updateBallForForeground(String pkg) {
         try {
             if (rules == null) return;
             if (!rules.floatBar) {                       // 悬浮窗总开关关着 ✗ 收起
@@ -1407,11 +1292,6 @@ if (lookupRetry == 0 || lookupRetry >= 7) Trace.add(Trace.now() + "  没找到�
                 if (fbar == null) fbar = new FloatBar(this, floatHost);
                 fbar.tailEnabled = rules.resultTail;
                 floatSuppressed = false;                 // 又有新文字了 ✗ 解除抑制
-                // ★ 2026-10-31：开了大模型改写 ✗ 先显示规则结果 ✗ 接口回来再替换 ✓
-                if (rules != null && !"off".equals(rules.rewriteMode)
-                        && rules.rewriteEndpoint != null && rules.rewriteEndpoint.length() > 0) {
-                    startRewrite(src, floatOut, "auto".equals(rules.rewriteMode));
-                }
                 if (src.length() > 0) {
                     fbar.showBall();
                     if (rules.resultTail) fbar.setTail(floatOut); else fbar.hideTail();
